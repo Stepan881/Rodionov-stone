@@ -409,6 +409,46 @@ progress {
   display: none !important;
 }
 
+@font-face {
+  font-display: swap;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Manrope-Bold.woff") format("woff"), url("../fonts/Manrope-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Manrope-Regular.woff") format("woff"), url("../fonts/Manrope-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Manrope-Light.woff") format("woff"), url("../fonts/Manrope-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "PT Root UI";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/PTRootUI-Regular.woff") format("woff"), url("../fonts/PTRootUI-Regular.woff2") format("woff2");
+}
+
 /*::placeholder {
 	color: #666;
 }
@@ -437,6 +477,18 @@ body {
 	position: relative;
 	overflow-x: hidden;
 }*/
+
+.visually-hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+}
 
 @media (min-width: 1200px) {
   h1 {
