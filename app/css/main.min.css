@@ -657,10 +657,14 @@ img {
   height: 100%;
 }
 
+.card-product__content {
+  padding: 20px;
+}
+
 .card-product__title {
   text-transform: uppercase;
   text-align: center;
-  margin: 20px 0 16px 0;
+  margin: 0 0 16px 0;
   font-weight: bold;
 }
 
