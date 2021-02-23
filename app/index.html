@@ -1,20 +1,26 @@
 
-@@include('./parts/header.html')
+@@include('./parts/header.html', {
+	"title": "Главная",
+	"header-white": "header__white"
+})
 
 <main class="main">
 	<section class="first-screen">
-		<picture>
-			<img class="first-screen__bg" src="./images/firstScreen.jpg" srcset="@2x.jpg 2x" alt="Фон">
+		
+		<picture class="first-screen__bg">
+			<img class="first-screen__img" src="./images/firstScreen.jpg" srcset="@2x.jpg 2x" alt="Фон">
 		</picture>
-
+		<div class="first-screen__dark"></div>
 		<div class="container">
-			<h1 class="">Regera Group</h1>
-			<picture>
-				<img class="first-screen__logo" src="http://dummyimage.com/150x60/99cccc/ffffff.gif&text=Логотип" srcset="@2x.jpg 2x" alt="Логотип">
-			</picture>
-			<p class="first-screen__text">Современные дома для спокойной жизни</p>
+			<div class="first-screen__wrapper">
+				<h1 class="visually-hidden">Regera Group</h1>
+				@@include('./parts/logo.html')
+				<p class="first-screen__text">Современные дома для спокойной жизни</p>
+			</div>
 		</div>
 	</section>
+
+
 	<section class="advantages">
 		<div class="container">
 			<div class="col">

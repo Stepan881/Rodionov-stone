@@ -102,6 +102,8 @@ async function buildhtml() {
 
 async function includeHTML(){
 
+	del('dist/**/*.html', { force: true })
+
 	let paths = { scripts: { src: 'app/', dest: 'dist/'} }
 
 	return src([
@@ -110,6 +112,9 @@ async function includeHTML(){
 		//'!footer.html' // ignore
 	])
 	.pipe(fileinclude({
+		context: {
+
+		},
 		prefix: '@@',
 		basepath: '@file'
 	}))

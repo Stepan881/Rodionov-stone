@@ -1,5 +1,6 @@
 .header {
   position: fixed;
+  z-index: 10;
   width: 100%;
 
   &__wrapper {
@@ -40,14 +41,14 @@
 
     &__link {
       padding: 10px;
-      // color: $white;
       color: $primary;
-      transition: 0.3s;
+      transition: text-shadow .3s;
+      display: block;
 
       &:hover {
-        color: $accent;
-        font-weight: bold;
+        text-shadow: 0 0 0px $primary, 0 0 0px $primary;
       }
+
     }
   }
 
@@ -75,10 +76,6 @@
     transition: 0.3s;
     font-weight: bold;
     margin-left: 42px;
-
-    &:hover {
-      color: $accent;
-    }
   }
 
   .button-transparent {
@@ -92,10 +89,12 @@
 
   .social__link {
     transition: 0.3s;
+
     path {
       stroke: $primary;
       transition: 0.3s;
     }
+
     &:hover {
       path {
         stroke: $accent;
@@ -113,15 +112,20 @@
 
     .nav__link {
       color: $white;
+      &:hover {
+        text-shadow: 0 0 0px $white, 0 0 0px $white;
+      }
     }
 
     .tel {
       color: $white;
     }
+
     .button-transparent {
       color: $white;
       border-color: $white;
     }
+
     .social__link {
       path {
         stroke: $white;
