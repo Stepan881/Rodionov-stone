@@ -7,7 +7,7 @@
 	<section class="first-screen">
 
 		<picture class="first-screen__bg">
-			<img class="first-screen__img" src="./images/firstScreen.jpg" srcset="@2x.jpg 2x" alt="Фон">
+			<img class="first-screen__img" src="./images/firstScreen.jpg" srcset="./images/firstScreen.jpg 2x" alt="Фон">
 		</picture>
 		<div class="first-screen__dark"></div>
 		<div class="container">
@@ -18,8 +18,6 @@
 			</div>
 		</div>
 	</section>
-
-
 	<section class="advantages">
 		<div class="container">
 			<div class="col">
@@ -74,19 +72,20 @@
 						<b class="card-projects__text">Построен и введен в эксплуатацию</b>
 						<div class="card-projects__btn">
 							@@include('./parts/button-red.html', {
+							"title": "Подробнее о проекте"
 							})
 						</div>
 					</div>
 					<picture class="card-projects__img-wrapper">
-						<img class="card-projects__img" src="http://dummyimage.com/150x60/99cccc/ffffff.gif&text=ДЖОЙ"
-							srcset="@2x.jpg 2x" alt="ДЖОЙ">
+						<img class="card-projects__img" src="./images/index/joy.png" srcset="./images/index/joy@2x.png 2x"
+							alt="ДЖОЙ">
 					</picture>
 				</div>
 
 				<div class="card-projects row">
 					<picture class="card-projects__img-wrapper">
-						<img class="card-projects__img" src="http://dummyimage.com/150x60/99cccc/ffffff.gif&text=ДЖОЙ"
-							srcset="@2x.jpg 2x" alt="ДЖОЙ">
+						<img class="card-projects__img" src="./images/index/grace.jpg" srcset="./images/index/grace@2x.jpg 2x"
+							alt="GRACE">
 					</picture>
 					<div class="card-projects__block col">
 						<span class="card-projects__info">Коттеджных посёлок</span>
@@ -96,6 +95,7 @@
 						<b class="card-projects__text">Построено 40% поселка</b>
 						<div class="card-projects__btn">
 							@@include('./parts/button-red.html', {
+							"title": "Подробнее о проекте"
 							})
 						</div>
 					</div>
@@ -147,24 +147,30 @@
 
 	<section class="instagram">
 		<div class="container">
-			<div class="row">
-				<h2 class="instagram__title">Подписывайтесь на наш Instagram, чтобы следить за ходом строительства</h2>
-				<a class="button" href="#">
-					<span class="button__text">Instagram</span>
-				</a>
-				<div class="instagram__photos">
-					<img class="instagram-screen__bg" src="http://dummyimage.com/150x60/99cccc/ffffff.gif&text=inst"
-						srcset="@2x.jpg 2x" alt="inst">
-					<img class="instagram-screen__bg" src="http://dummyimage.com/150x60/99cccc/ffffff.gif&text=inst"
-						srcset="@2x.jpg 2x" alt="inst">
-					<img class="instagram-screen__bg" src="http://dummyimage.com/150x60/99cccc/ffffff.gif&text=inst"
-						srcset="@2x.jpg 2x" alt="inst">
-					<img class="instagram-screen__bg" src="http://dummyimage.com/150x60/99cccc/ffffff.gif&text=inst"
-						srcset="@2x.jpg 2x" alt="inst">
-					<img class="instagram-screen__bg" src="http://dummyimage.com/150x60/99cccc/ffffff.gif&text=inst"
-						srcset="@2x.jpg 2x" alt="inst">
-					<img class="instagram-screen__bg" src="http://dummyimage.com/150x60/99cccc/ffffff.gif&text=inst"
-						srcset="@2x.jpg 2x" alt="inst">
+			<div class="instagram__wrapper">
+				<div class="instagram__content">
+					<h2 class="instagram__title">Подписывайтесь на наш Instagram, чтобы следить за ходом строительства</h2>
+					<div class="instagram__btn">
+						@@include('./parts/button-red.html', {
+						"title": "Instagram"
+						})
+					</div>
+				</div>
+				<div class="instagram__images">
+					<div class="instagram__photos">
+						<img class="instagram-screen__bg" src="./images/index/Instagram1.jpg"
+							srcset="./images/index/Instagram1@2x.jpg 2x" alt="inst">
+						<img class="instagram-screen__bg" src="./images/index/Instagram2.jpg"
+							srcset="./images/index/Instagram2@2x.jpg 2x" alt="inst">
+						<img class="instagram-screen__bg" src="./images/index/Instagram3.jpg"
+							srcset="./images/index/Instagram3@2x.jpg 2x" alt="inst">
+						<img class="instagram-screen__bg" src="./images/index/Instagram4.jpg"
+							srcset="./images/index/Instagram4@2x.jpg 2x" alt="inst">
+						<img class="instagram-screen__bg" src="./images/index/Instagram5.jpg"
+							srcset="./images/index/Instagram5@2x.jpg 2x" alt="inst">
+						<img class="instagram-screen__bg" src="./images/index/Instagram6.jpg"
+							srcset="./images/index/Instagram6@2x.jpg 2x" alt="inst">
+					</div>
 				</div>
 
 			</div>

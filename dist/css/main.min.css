@@ -7565,6 +7565,7 @@ button {
   position: absolute;
   height: 100%;
   z-index: -2;
+  width: 100%;
 }
 
 .first-screen__img {
@@ -7620,6 +7621,20 @@ button {
   color: #ffffff;
   margin: 50px 0 0 0;
   letter-spacing: 0.06em;
+}
+
+.gallery {
+  background: #F7F7F7;
+  min-height: 837px;
+}
+
+.gallery__title {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.gallery__slider {
+  display: none;
 }
 
 .header {
@@ -7775,8 +7790,54 @@ button {
   stroke: #ffffff;
 }
 
+.instagram__wrapper {
+  margin-top: 102px;
+  margin-bottom: 88px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.instagram__content {
+  max-width: 355px;
+  min-height: 100%;
+}
+
+.instagram__title {
+  font-weight: bold;
+}
+
+.instagram__btn {
+  margin-top: 49px;
+}
+
+.instagram__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.instagram__photos {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 0;
+  max-width: 750px;
+  width: 100%;
+}
+
 .projects {
-  padding-bottom: 85px;
+  padding-bottom: 36px;
 }
 
 .projects__title {

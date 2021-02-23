@@ -1,0 +1,12 @@
+.gallery {
+  background: $bd-dark;
+  min-height: 837px;
+  &__title {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  &__slider {
+    display: none;
+  }
+}
