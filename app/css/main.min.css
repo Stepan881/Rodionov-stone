@@ -491,6 +491,13 @@ button {
   padding: 0;
 }
 
+img {
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .button-more {
   color: #E2704C;
 }
@@ -615,6 +622,109 @@ button {
 .pagination .active {
   background: #E2704C;
   color: #ffffff;
+}
+
+.card-info {
+  position: relative;
+}
+
+.card-info__link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.card-info__img-wrapper {
+  height: 250px;
+}
+
+.card-info__img {
+  height: 100%;
+}
+
+.card-info__title {
+  font-weight: bold;
+  margin: 16px 0 8px 0;
+}
+
+.card-product__img-wrapper {
+  max-height: 383px;
+}
+
+.card-product__img {
+  height: 100%;
+}
+
+.card-product__title {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0 16px 0;
+  font-weight: bold;
+}
+
+.card-product__bold {
+  font-weight: bold;
+}
+
+.card-product__table {
+  width: 100%;
+}
+
+.card-product__table tr:last-child td {
+  padding-top: 20px;
+}
+
+.card-product__table td {
+  padding: 5px;
+}
+
+.card-product__table tr > td:last-child {
+  text-align: right;
+  font-weight: bold;
+}
+
+.card-simple {
+  -webkit-box-shadow: 0px 4px 20px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 20px 2px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.card-simple:hover {
+  -webkit-box-shadow: 0px 4px 20px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 20px 2px rgba(0, 0, 0, 0.2);
+}
+
+.card-simple__link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.card-simple__img-wrapper {
+  height: 250px;
+}
+
+.card-simple__img {
+  height: 100%;
+}
+
+.card-simple__content {
+  padding: 28px 25px 37px 23px;
+  background: #ffffff;
+  color: #373737;
+}
+
+.card-simple__time {
+  margin-bottom: 3px;
+}
+
+.card-simple__title {
+  margin-bottom: 13px;
+  font-weight: bold;
 }
 
 @media (min-width: 1200px) {

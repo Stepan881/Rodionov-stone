@@ -1,0 +1,33 @@
+.card-info {
+  position: relative;
+
+  &__link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__img-wrapper {
+    height: 250px;
+  }
+
+  &__img {
+    height: 100%;
+  }
+
+  &__content {
+
+  }
+
+  &__title {
+    font-weight: bold;
+    margin: 16px 0 8px 0;
+  }
+
+  &__text {
+
+  }
+
+}

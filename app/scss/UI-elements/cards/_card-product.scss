@@ -1,0 +1,45 @@
+.card-product {
+
+  &__img-wrapper {
+    max-height: 383px;
+    
+  }
+
+  &__img {
+    height: 100%;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0 16px 0;
+    font-weight: bold;
+  }
+
+  &__bold {
+    font-weight: bold;
+  }
+
+  &__table {
+    width: 100%;
+
+    tr {
+      &:last-child {
+        td {
+          padding-top: 20px;
+        }
+      }
+    }
+
+    td {
+      padding: 5px;
+    }
+
+    tr>td:last-child {
+      text-align: right;
+      font-weight: bold;
+    }
+
+  }
+
+}
