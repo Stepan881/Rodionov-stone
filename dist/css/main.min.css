@@ -8270,6 +8270,57 @@ button {
   margin: 0 1% 40px;
 }
 
+.mortgage__title {
+  margin-top: 80px;
+  margin-bottom: 60px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.mortgage__sub-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.mortgage__list {
+  margin: 20px 0 0 0;
+  padding-left: 20px;
+  margin-bottom: 40px;
+  counter-reset: listCounter;
+}
+
+.mortgage__item {
+  list-style: none;
+  position: relative;
+  counter-increment: listCounter;
+}
+
+.mortgage__item::before {
+  content: counters(listCounter, ".", decimal) ".";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  position: absolute;
+  left: -20px;
+  color: #E2704C;
+}
+
+.mortgage__text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.mortgage__info {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+}
+
 .news.joy {
   background: #ffffff;
 }
@@ -8328,6 +8379,10 @@ button {
   height: 100%;
   -o-object-fit: contain;
   object-fit: contain;
+}
+
+.progres {
+  background-color: #F7F7F7;
 }
 
 .project {
