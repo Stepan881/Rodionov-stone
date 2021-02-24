@@ -8046,6 +8046,16 @@ button {
   display: none;
 }
 
+.grace__village {
+  max-width: 716px;
+  margin-bottom: 42px;
+}
+
+.grace__img {
+  width: 100%;
+  height: 100%;
+}
+
 .header {
   background: #ffffff;
   position: fixed;
