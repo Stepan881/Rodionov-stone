@@ -1,34 +1,37 @@
-.news.joy {
-  background: $white;
+.news {
+  background: $bd-dark;
 
-  .news {
-    background: $bd-dark;
+  &__title {
+    margin-top: 76px;
+    max-width: 557px;
+  }
 
-    &__title {
-      margin-top: 76px;
-      max-width: 557px;
+  &__wrapper {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &>* {
+      width: 30%;
+      margin: 0 1.5% 30px;
     }
 
-    &__wrapper {
-      margin-top: 45px;
-      display: flex;
-      justify-content: space-between;
-
-      .card-simple {
-        max-width: 360px;
-        width: 30%;
-        min-height: 520px;
-      }
-
-      .card-info {
-        max-width: 360px;
-        width: 30%;
-      }
-
+    .card-simple {
+      max-width: 360px;
+      min-height: 520px;
     }
 
-    &__btn {
-      margin: 89px auto 77px;
+    .card-info {
+      max-width: 360px;
     }
   }
+
+  &__btn {
+    margin: 77px auto;
+  }
+}
+
+.news.joy {
+  background: $white;
 }

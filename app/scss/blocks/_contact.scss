@@ -57,18 +57,18 @@
   }
 }
 
-.contact.article {
+.contact.article-project {
   background: $bd-dark;
 
-  .article {
+  .article-project {
+    
     &__wrapper {
       max-width: 700px;
       margin-left: auto;
     }
+
     &__img-wrapper {
       width: 50%;
-  
     }
   }
-
 }
