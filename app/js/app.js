@@ -28,7 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	slider();
 
 	$( ".slider" ).each(function(index) {
-		$('.slider-photos', $(this)).slick({
+		$('.slider-photos:not(.slider-documentation)', $(this)).slick({
+			
 			adaptiveHeight: true,
 			dots: true,
 			appendArrows: 'pagination',
@@ -40,7 +41,51 @@ document.addEventListener('DOMContentLoaded', () => {
 				return '<span class="boolets-dot"></span>';
 			},
 		});
+		
+	
+		$('.slider-documentation', $(this)).slick({
+			speed: 300,
+			slidesToShow: 3,
+			slidesToScroll: 3,
+			adaptiveHeight: true,
+			dots: true,
+			appendArrows: 'pagination',
+			lazyLoad: 'ondemand',
+			prevArrow: $(this).find('.prew'),
+			nextArrow: $(this).find('.next'),
+			dotsClass: 'boolets',
+			customPaging: function (slider, i) {
+				return '<span class="boolets-dot"></span>';
+			},
+			responsive: [
+				{
+					breakpoint: 1024,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2,
+						infinite: true,
+						dots: true
+					}
+				},
+				{
+					breakpoint: 480,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+				// You can unslick at a given breakpoint now by adding:
+				// settings: "unslick"
+				// instead of a settings object
+			]
+		});
 	});
+
+				
+
+
+
+
 
 	function headerColor() {
 		function toggle() {

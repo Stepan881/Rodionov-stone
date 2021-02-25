@@ -8293,6 +8293,10 @@ button {
   min-height: 571px;
 }
 
+.contact {
+  background: #F7F7F7;
+}
+
 .contact__title,
 .contact__sub-title {
   font-weight: bold;
@@ -8362,6 +8366,30 @@ button {
 
 .contact.article-project .article-project__img-wrapper {
   width: 50%;
+}
+
+.documentation {
+  padding-bottom: 80px;
+}
+
+.documentation__title {
+  padding-top: 80px;
+}
+
+.documentation__container {
+  margin-top: 60px;
+}
+
+.documentation-slider-text {
+  text-align: center;
+  margin-top: 8px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.documentation .slider-slide {
+  padding: 0 24px;
 }
 
 .first-screen {
@@ -9183,6 +9211,11 @@ button {
 
 .reviews .slider-photos {
   margin: 20px;
+}
+
+.reviews .slider-prew,
+.reviews .slider-next {
+  top: calc(50% - 90px);
 }
 
 .article-project__top {

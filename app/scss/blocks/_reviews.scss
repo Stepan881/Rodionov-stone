@@ -10,4 +10,8 @@
   .slider-photos {
     margin: 20px;
   }
+  .slider-prew,
+  .slider-next {
+    top: calc(50% - 90px);
+  }
 }

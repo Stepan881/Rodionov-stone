@@ -1,3 +1,22 @@
 .documentation {
-  
+  padding-bottom: 80px;
+  &__title {
+    padding-top: 80px;
+  }
+
+  &__container {
+    margin-top: 60px;
+  }
+
+  &-slider-text {
+    text-align: center;
+    margin-top: 8px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .slider-slide {
+    padding: 0 24px;
+  }
 }
