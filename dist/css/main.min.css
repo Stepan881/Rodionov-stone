@@ -7842,6 +7842,7 @@ button {
 
 .slider-image {
   height: 100%;
+  max-height: 556px;
 }
 
 .slider-prew {
@@ -7854,6 +7855,14 @@ button {
   position: absolute;
   top: calc(50% - 100px);
   right: 0;
+}
+
+.slider-data {
+  padding: 24px 0;
+  display: none;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .slider .boolets {
@@ -9066,6 +9075,43 @@ button {
 
 .progres {
   background-color: #F7F7F7;
+}
+
+.progres__wrapper {
+  padding-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.progres__sub-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: #E2704C;
+}
+
+.progres .no-buulet .boolets {
+  display: none !important;
+}
+
+.progres .no-buulet .slider-photos {
+  margin-bottom: 24px;
+}
+
+.progres .no-buulet .slider-next,
+.progres .no-buulet .slider-prew {
+  top: calc(50% - 30px);
+}
+
+.progres .data .slider-data {
+  display: block;
 }
 
 .project {

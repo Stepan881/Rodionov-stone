@@ -1,3 +1,39 @@
 .progres {
   background-color: $bd-dark;
+
+  &__wrapper {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__sub-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    color: $accent;
+
+  }
+
+  .no-buulet {
+    .boolets {
+      display: none !important;
+    }
+
+    .slider-photos {
+      margin-bottom: 24px;
+    }
+
+    .slider-next,
+    .slider-prew {
+      top: calc(50% - 30px);
+    }
+  }
+
+  .data {
+    .slider-data {
+      display: block;
+    }
+  }
 }

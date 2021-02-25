@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	slider();
 
 	$( ".slider" ).each(function(index) {
+		console.log($(this));
 		$('.slider-photos:not(.slider-documentation)', $(this)).slick({
 			
 			adaptiveHeight: true,

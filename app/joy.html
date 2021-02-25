@@ -82,36 +82,8 @@
     <div class="container">
       <div class="col">
         <h2 class="gallery__title title">Фотогалерея</h2>
-        <div class="gallery__slider slider">
-          <div class="slider__container">
-
-            <div class="slider__wrapper">
-              <div class="slider__slide">Slide 1</div>
-              <div class="slider__slide">Slide 2</div>
-              <div class="slider__slide">Slide 3</div>
-              <div class="slider__slide">Slide 4</div>
-              <div class="slider__slide">Slide 5</div>
-              <div class="slider__slide">Slide 6</div>
-              <div class="slider__slide">Slide 7</div>
-              <div class="slider__slide">Slide 8</div>
-              <div class="slider__slide">Slide 9</div>
-              <div class="slider__slide">Slide 10</div>
-            </div>
-
-            <div class="slider__next"> туда </div>
-
-            <div class="slider__prev"> сюда </div>
-
-            <div class="slider__pagination">
-              <span>0</span>
-              <span>0</span>
-              <span>0</span>
-              <span>0</span>
-              <span>0</span>
-              <span>0</span>
-            </div>
-
-          </div>
+        <div class="gallery__slider">
+          @@include('./parts/sliders/sliders-gallery.html')
         </div>
       </div>
     </div>
@@ -285,41 +257,14 @@
 
   <section class="progres">
     <div class="container">
-      <div class="row">
+      <div class="progres__wrapper">
         <h2 class="progres__title title">Ход строительства</h2>
         <span class="progres__sub-title">Смотреть видео со строки</span>
       </div>
-      <div class="progres__slider slider">
-        <div class="slider__container">
-
-          <div class="slider__wrapper">
-            <div class="slider__slide">Slide 1</div>
-            <div class="slider__slide">Slide 2</div>
-            <div class="slider__slide">Slide 3</div>
-            <div class="slider__slide">Slide 4</div>
-            <div class="slider__slide">Slide 5</div>
-            <div class="slider__slide">Slide 6</div>
-            <div class="slider__slide">Slide 7</div>
-            <div class="slider__slide">Slide 8</div>
-            <div class="slider__slide">Slide 9</div>
-            <div class="slider__slide">Slide 10</div>
-          </div>
-
-          <div class="slider__next"> туда </div>
-
-          <div class="slider__prev"> сюда </div>
-          <span class="progres__data">Декабрь 2020г.</span>
-          <div class="slider__pagination">
-            <span>0</span>
-            <span>0</span>
-            <span>0</span>
-            <span>0</span>
-            <span>0</span>
-            <span>0</span>
-          </div>
-
-        </div>
+      <div class="gallery__slider no-buulet data">
+        @@include('./parts/sliders/sliders-gallery.html')
       </div>
+      
     </div>
   </section>
 
