@@ -7,30 +7,10 @@
 // require('~/app/libs/mmenu/dist/mmenu.js')
 
 document.addEventListener('DOMContentLoaded', () => {
-	function slider() {
-
-		let image = document.querySelector(`#image`);
-
-		if (image === null) return;
-
-		let dots = document.querySelector(`#dots`);
-		let dotsImg = dots.querySelectorAll(`img`);
-		dots.addEventListener(`click`, function (evt) {
-			if (evt.target.matches(`.article-project__buulet-img`)) {
-				dotsImg.forEach(img => {
-					img.classList.remove(`active`);
-				});
-				image.src = evt.target.src;
-				evt.target.classList.add(`active`);
-			}
-		})
-	}
-	slider();
-
-	$( ".slider" ).each(function(index) {
+	$(".slider").each(function (index) {
 		console.log($(this));
 		$('.slider-photos:not(.slider-documentation)', $(this)).slick({
-			
+
 			adaptiveHeight: true,
 			dots: true,
 			appendArrows: 'pagination',
@@ -42,8 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
 				return '<span class="boolets-dot"></span>';
 			},
 		});
-		
-	
+
+
 		$('.slider-documentation', $(this)).slick({
 			speed: 300,
 			slidesToShow: 3,
@@ -58,8 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			customPaging: function (slider, i) {
 				return '<span class="boolets-dot"></span>';
 			},
-			responsive: [
-				{
+			responsive: [{
 					breakpoint: 1024,
 					settings: {
 						slidesToShow: 2,
@@ -82,8 +61,25 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	});
 
-				
-
+	function sliderProject() {
+		$('#slide-priject-big').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: false,
+			fade: true,
+			asNavFor: '#slide-priject-min'
+		});
+		$('#slide-priject-min').slick({
+			infinite: false,
+			variableWidth: true,
+			swipeToSlide: true,
+			
+			asNavFor: '#slide-priject-big',
+			dots: true,
+			focusOnSelect: true
+		});
+	}
+	sliderProject();
 
 
 
