@@ -8,7 +8,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 	$(".slider").each(function (index) {
-		console.log($(this));
 		$('.slider-photos:not(.slider-documentation)', $(this)).slick({
 
 			adaptiveHeight: true,
@@ -54,9 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
 						slidesToScroll: 1
 					}
 				}
-				// You can unslick at a given breakpoint now by adding:
-				// settings: "unslick"
-				// instead of a settings object
 			]
 		});
 	});
@@ -73,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			infinite: false,
 			variableWidth: true,
 			swipeToSlide: true,
-			
+
 			asNavFor: '#slide-priject-big',
 			dots: true,
 			focusOnSelect: true
@@ -105,4 +101,25 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 	headerColor();
 
+
+	// отзрыть закрыть меню
+	function navMenu() {
+
+		let btn = document.querySelector('.js-open-nav');
+		let menu = document.querySelector('.js-nav-menu');
+		let overlay = document.querySelector('.js-nav-overlay');
+
+		btn.addEventListener('click', function () {
+			this.classList.toggle('header__open');
+			menu.classList.toggle('nav--open');
+		});
+		
+		overlay.addEventListener('click', function (evt) {
+			console.log(evt.target);
+			btn.classList.remove('header__open');
+			menu.classList.remove('nav--open');
+		});
+	}; 
+
+	navMenu();
 });
