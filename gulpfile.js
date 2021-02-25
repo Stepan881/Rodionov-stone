@@ -59,7 +59,7 @@ function scripts() {
 			this.emit('end')
 		})
 		.pipe(rename('app.min.js'))
-		.pipe(dest('app/js'))
+		.pipe(dest('dist/js'))
 		.pipe(browserSync.stream())
 }
 

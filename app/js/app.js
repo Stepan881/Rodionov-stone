@@ -9,5 +9,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
 	// Custom JS
-
+console.log(321);
 })
