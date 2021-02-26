@@ -113,13 +113,13 @@ document.addEventListener('DOMContentLoaded', () => {
 			this.classList.toggle('header__open');
 			menu.classList.toggle('nav--open');
 		});
-		
+
 		overlay.addEventListener('click', function (evt) {
 			console.log(evt.target);
 			btn.classList.remove('header__open');
 			menu.classList.remove('nav--open');
 		});
-	}; 
+	};
 
 	navMenu();
 });

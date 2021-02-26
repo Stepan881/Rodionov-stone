@@ -1,6 +1,6 @@
 .gallery {
   background: $bd-dark;
-  
+
 
   &__title {
     padding-top: 60px;
@@ -8,9 +8,19 @@
     font-weight: 300;
     font-size: 24px;
     line-height: 40px;
+
+    @media (max-width: $sm) { 
+      padding-top: 42px;
+}
   }
 
   &__slider {
     padding: 54px 0 70px;
+
+    @media (max-width: $sm) {
+        margin: 0 -0.75rem;
+        width: calc(100% + 1.5rem);
+        padding: 41px 0 0;
+    }
   }
 }

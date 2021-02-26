@@ -122,12 +122,13 @@
 			<div class="instagram__wrapper">
 				<div class="instagram__content">
 					<h2 class="instagram__title">Подписывайтесь на наш Instagram, чтобы следить за ходом строительства</h2>
-					<div class="instagram__btn">
-						@@include('./parts/buttons/button-red.html', {
-						"title": "Instagram",
-						"link": "instagram.com",
-						})
-					</div>
+
+				</div>
+				<div class="instagram__btn">
+					@@include('./parts/buttons/button-red.html', {
+					"title": "Instagram",
+					"link": "instagram.com",
+					})
 				</div>
 				<div class="instagram__images">
 					<div class="instagram__photos">
@@ -191,7 +192,9 @@
 		</div>
 	</section>
 
-	@@include('./template/contact.html')
+	@@include('./template/contact.html', {
+		"dark": ' ',
+	})
 </main>
 
 @@include('./parts/footer.html')

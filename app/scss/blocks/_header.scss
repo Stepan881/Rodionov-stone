@@ -215,6 +215,9 @@
     }
 
     .nav {
+      overflow: auto;
+      height: 100vh;
+      overflow: scroll;
       transition: 0.3s;
       position: fixed;
       top: 0;
@@ -222,9 +225,11 @@
       left: 100vw;
       bottom: 0;
       flex-direction: column;
+      flex-wrap: nowrap;
       justify-content: flex-start;
       align-items: flex-end;
       background: linear-gradient(to left, $white 0, $white 375px, rgba(255, 255, 255, 0) 375px, rgba(255, 255, 255, 0) 100%);
+      background: linear-gradient($white);
 
       &.nav--open {
         transition: 0.3s;
@@ -288,7 +293,7 @@
         padding-left: 107px;
         max-width: 375px;
         width: 100%;
-
+        margin-bottom: 30px;
         &__link {
           padding: 16px;
         }

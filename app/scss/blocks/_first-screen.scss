@@ -54,5 +54,9 @@
     color: $white;
     margin: 50px 0 0 0;
     letter-spacing: 0.06em;
+    text-align: center;
+    @media (max-width: $lg) {
+      margin: 41px 0 0 0;
+    }
   }
 }

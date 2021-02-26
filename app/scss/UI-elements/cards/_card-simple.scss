@@ -26,6 +26,10 @@
     padding: 28px 25px 25px 23px;
     background: $white;
     color: $primary;
+
+    @media (max-width: $lg) {
+      padding: 12px 20px;
+    }
   }
 
   &__time {
@@ -35,5 +39,8 @@
   &__title {
     margin-bottom: 13px;
     font-weight: bold;
+    @media (max-width: $lg) {
+      margin: 12px 0 23px 0;
+    }
   }
 }

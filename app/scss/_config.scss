@@ -69,6 +69,10 @@ $xxl: 1400px;
 
 // @include adaptiv-font(40, 20);
 
+html {
+	overflow-x: hidden;
+}
+
 body {
 	font-family: 'Manrope';
 	font-size: 16px;
