@@ -8,8 +8,6 @@
 }
 @media (max-width: $lg) { 
 }
-@media (max-width: $lg) { 
-}
 @media (max-width: $xl) { 
 }
 */
@@ -7706,7 +7704,6 @@ button {
 }
 
 .card-product__title {
-  text-transform: uppercase;
   text-align: center;
   margin: 0 0 12px 0;
   font-weight: bold;
@@ -15149,6 +15146,14 @@ button {
   .slider__text::before {
     content: none;
   }
+
+  .layouts__wrapper > * {
+    width: 48%;
+  }
+
+  .news__wrapper > * {
+    width: 48%;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -15253,6 +15258,10 @@ button {
     stroke: #ffffff;
   }
 
+  .header {
+    min-height: 70px;
+  }
+
   .header__wrapper {
     padding: 26px 10px;
   }
@@ -15290,6 +15299,7 @@ button {
     background: -webkit-gradient(linear, left top, left bottom, from(#ffffff));
     background: -o-linear-gradient(#ffffff);
     background: linear-gradient(#ffffff);
+    visibility: hidden;
   }
 
   .header .nav.nav--open {
@@ -15300,6 +15310,7 @@ button {
     right: 0;
     left: 0;
     bottom: 0;
+    visibility: visible;
   }
 
   .header .nav__overlay {
@@ -15399,6 +15410,20 @@ button {
     grid-template-rows: 1fr auto auto;
   }
 
+  .layouts__wrapper > * {
+    width: 100%;
+  }
+
+  .mortgage .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
   .news__wrapper > * {
     width: 100%;
     margin: 0 1.5% 30px;
@@ -15407,6 +15432,14 @@ button {
   .news__wrapper .card-simple {
     max-width: 100%;
     min-height: auto;
+  }
+
+  .project__bg {
+    margin-top: 0;
+  }
+
+  .project .button {
+    width: 100%;
   }
 
   .card-projects {
@@ -15471,6 +15504,10 @@ button {
     background: #ffffff;
   }
 
+  .slider-data {
+    text-align: center;
+  }
+
   .slider .slider-pagination {
     display: none;
   }
@@ -15485,12 +15522,55 @@ button {
     width: 100%;
   }
 
+  .advantages-col-3 {
+    width: 50%;
+  }
+
+  .advantages-col-4 {
+    width: 50%;
+  }
+
+  .advantages-col-text {
+    max-width: 100%;
+  }
+
   .advantages__block {
     margin-top: 6px;
   }
 
   .advantages__card {
     margin-bottom: 16px;
+  }
+
+  .benefits {
+    padding-top: 21px;
+    padding-bottom: 20px;
+  }
+
+  .benefits__title {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .benefits__iframe {
+    min-height: 676px;
+  }
+
+  .benefits.location .benefits__title {
+    margin-top: 58px;
+  }
+
+  .communications.benefits .communications__title {
+    margin-bottom: 48px;
+  }
+
+  .communications.benefits .communications__bg {
+    margin-top: 18px;
+  }
+
+  .communications.benefits .communications__img {
+    min-height: 580px;
   }
 
   .contact__mobile {
@@ -15622,6 +15702,10 @@ button {
     order: 1;
   }
 
+  .gallery__slider {
+    padding: 54px 0;
+  }
+
   .instagram__wrapper {
     grid-gap: 40px;
     -ms-grid-columns: auto;
@@ -15631,6 +15715,28 @@ button {
     grid-template-areas: "t" "i" "b";
     padding: 60px 0;
     margin: 0;
+  }
+
+  .layouts {
+    padding-top: 54px;
+    padding-bottom: 25px;
+  }
+
+  .mortgage__title {
+    margin-bottom: 49px;
+  }
+
+  .mortgage__text {
+    margin: 0 0 28px 0;
+  }
+
+  .mortgage__info {
+    min-width: auto;
+  }
+
+  .news__title {
+    margin-top: 55px;
+    line-height: 32px;
   }
 
   .news__btn {
@@ -15651,6 +15757,18 @@ button {
     margin-bottom: 10px;
   }
 
+  .photos__wrapper {
+    grid-template-rows: 220px 100px;
+    -ms-grid-rows: auto auto;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template: "a a" auto "b c" auto / 1fr 1fr;
+  }
+
+  .photos__wrapper > .instagram__btn {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+
   .instagram__content {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -15667,9 +15785,75 @@ button {
     -ms-grid-column: 1;
   }
 
+  .photos__img:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+
   .photos__img:nth-child(2) {
     -ms-grid-row: 5;
     -ms-grid-column: 1;
+  }
+
+  .photos__wrapper > .photos__img:nth-child(2) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+
+  .photos__img:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+
+  .progres__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .progres__title {
+    margin-bottom: 48px;
+  }
+
+  .progres .no-buulet .boolets {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    margin: 5px auto;
+  }
+
+  .project__image {
+    min-height: 812px;
+  }
+
+  .project__top {
+    top: 230px;
+    left: 0;
+    padding: 0 15px;
+  }
+
+  .project__title {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 68px;
+  }
+
+  .project__text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .project__bottom {
+    margin: 60px auto 55px;
+  }
+
+  .project__content {
+    font-size: 18px;
+    line-height: 26px;
   }
 
   .card-projects__block {
@@ -15769,6 +15953,14 @@ button {
     margin-bottom: 58px;
   }
 
+  .advantages-col-3 {
+    width: 100%;
+  }
+
+  .advantages-col-4 {
+    width: 100%;
+  }
+
   .advantages__block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -15784,6 +15976,10 @@ button {
   .advantages .card-advantages:not(:last-child) {
     width: 100%;
     max-width: 250px;
+  }
+
+  .gallery {
+    padding-bottom: 30px;
   }
 
   .gallery__title {
@@ -15842,6 +16038,35 @@ button {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 12px 20px;
+  }
+
+  .layouts__wrapper {
+    margin: 0 -15px;
+  }
+
+  .layouts__wrapper > * {
+    margin: 0 0 40px;
+    padding: 0;
+  }
+
+  .news__wrapper {
+    padding: 0;
+    width: 100%;
+  }
+
+  .news__wrapper > * {
+    margin: 0 -15px 40px;
+    padding: 0;
+  }
+
+  .news__wrapper .card-info {
+    max-width: calc(100% + 30px);
+    width: calc(100% + 30px);
+    margin: 0 -15px 40px;
+  }
+
+  .news__wrapper .card-info__content {
+    padding: 0 15px;
   }
 
   .projects__wrapper {

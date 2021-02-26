@@ -2,6 +2,11 @@
   background: $bd-dark;
   padding-top: 80px;
 
+  @media (max-width: $md) { 
+    padding-top: 54px;
+    padding-bottom: 25px;
+  }
+
   &__title {
     margin: 0 auto 60px;
     text-align: center;
@@ -9,9 +14,27 @@
 
   &__wrapper {
     justify-content: center;
+
+    @media (max-width: $sm) { 
+      margin: 0 -15px;
+    }
+
     &>* {
       width: 30%;
       margin: 0 1% 40px;
+
+      @media (max-width: $xl) { 
+        width: 48%;
+      }
+
+      @media (max-width: $lg) { 
+        width: 100%;
+      }
+      @media (max-width: $sm) { 
+        margin: 0 0 40px;
+        padding: 0;
+
+      }
     }
   }
 }

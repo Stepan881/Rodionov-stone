@@ -4,6 +4,11 @@
   &__title {
     margin-top: 76px;
     max-width: 557px;
+
+    @media (max-width: $md) {
+      margin-top: 55px;
+      line-height: 32px;
+    }
   }
 
   &__wrapper {
@@ -12,17 +17,34 @@
     justify-content: center;
     flex-wrap: wrap;
 
+    @media (max-width: $sm) { 
+      padding: 0;
+
+      width: 100%;
+    }
+
     &>* {
       width: 30%;
       margin: 0 1.5% 30px;
-    }
 
-    @media (max-width: $lg) {
-      &>* {
+      @media (max-width: $xl) {
+        width: 48%;
+      }
+
+      @media (max-width: $lg) {
+
         width: 100%;
         margin: 0 1.5% 30px;
       }
+
+      @media (max-width: $sm) {
+        margin: 0 -15px 40px;
+        padding: 0;
+      }
+
     }
+
+
 
     .card-simple {
       max-width: 360px;
@@ -36,6 +58,18 @@
 
     .card-info {
       max-width: 360px;
+
+      @media (max-width: $sm) { 
+
+        max-width: calc(100% + 30px);
+        width: calc(100% + 30px);
+        margin: 0 -15px 40px;
+
+        &__content {
+          padding: 0 15px;
+        }
+      }
+      
     }
   }
 

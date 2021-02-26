@@ -7,6 +7,14 @@
             
     max-width: 1440px;
     margin: 0 auto;
+
+    @media (max-width: $md) { 
+      grid-template-rows: 220px 100px;
+      grid-template:
+      "a a" auto
+      "b c" auto / 1fr 1fr;
+
+    }
   }
 
   &__img {

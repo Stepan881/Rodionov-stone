@@ -205,6 +205,7 @@
 
 @media (max-width: $lg) {
   .header {
+    min-height: 70px;
 
     &__wrapper {
       padding: 26px 10px;
@@ -230,13 +231,15 @@
       align-items: flex-end;
       background: linear-gradient(to left, $white 0, $white 375px, rgba(255, 255, 255, 0) 375px, rgba(255, 255, 255, 0) 100%);
       background: linear-gradient($white);
-
+      visibility: hidden;
+      
       &.nav--open {
         transition: 0.3s;
         top: 0;
         right: 0;
         left: 0;
         bottom: 0;
+        visibility: visible;
       }
 
       &__overlay {

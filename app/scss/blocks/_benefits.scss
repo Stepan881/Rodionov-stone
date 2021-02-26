@@ -2,8 +2,20 @@
   padding-top: 78px;
   padding-bottom: 43px;
 
+  @media (max-width: $md) {
+    padding-top: 21px;
+    padding-bottom: 20px;
+
+  }
+
   &__title {
-    margin:0 0 54px 0;
+    margin: 0 0 54px 0;
+
+    @media (max-width: $md) {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 32px;
+    }
   }
 
   &__map {
@@ -13,5 +25,20 @@
   &__iframe {
     width: 100%;
     min-height: 585px;
+
+    @media (max-width: $md) { 
+      min-height: 676px;
+    }
+  }
+}
+
+.benefits.location {
+  .benefits {
+    &__title {
+      @media (max-width: $md) { 
+        margin-top: 58px;
+      }
+      
+    }
   }
 }
