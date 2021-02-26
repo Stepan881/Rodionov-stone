@@ -120,6 +120,11 @@
 
     &__img-wrapper {
       width: 50%;
+      padding: 0;
+
+      @media (max-width: $md) { 
+        width: 100%;
+      }
     }
   }
 }

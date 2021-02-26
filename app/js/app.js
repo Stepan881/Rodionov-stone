@@ -61,7 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		$('#slide-priject-big').slick({
 			slidesToShow: 1,
 			slidesToScroll: 1,
-			arrows: false,
+			arrows : false,
+			dots: false,
 			fade: true,
 			asNavFor: '#slide-priject-min'
 		});
@@ -69,9 +70,9 @@ document.addEventListener('DOMContentLoaded', () => {
 			infinite: false,
 			variableWidth: true,
 			swipeToSlide: true,
-
 			asNavFor: '#slide-priject-big',
-			dots: true,
+			arrows : false,
+			dots: false,
 			focusOnSelect: true
 		});
 	}

@@ -17,6 +17,14 @@
     &>* {
       width: 30%;
       margin: 0 1.5% 30px;
+
+      @media (max-width: $lg) { 
+        width: 47%;
+      }
+      @media (max-width: $md) { 
+        width: 100%;
+        margin: 0 0 30px;
+      }
     }
   }
 
@@ -24,6 +32,14 @@
     display: flex;
     justify-content: center;
     margin: 80px 0;
+
+    @media (max-width: $md) { 
+      width: 100%;
+      margin: 40px 0 50px;
+      .button {
+        width: 100%;
+      }
+    }
   }
 
   &__pagination {
@@ -31,5 +47,10 @@
     display: flex;
     justify-content: center;
     padding-bottom: 100px;
+
+    @media (max-width: $md) { 
+      margin: 40px 0 0;
+
+    }
   }
 }

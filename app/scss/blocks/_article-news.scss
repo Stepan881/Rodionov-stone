@@ -6,7 +6,8 @@
     
   &__title {
     
-    min-width: 652px;
+    max-width: 652px;
+    width: 100%;
     font-weight: bold;
     font-size: 36px;
     line-height: 44px;
@@ -27,12 +28,22 @@
     height: 100%;
     min-height: 473px;
     margin: 48px 0 60px;
+    
+    @media (max-width: $sm) { 
+      margin: 48px -15px 60px;
+      width: calc(100% + 30px);
+      min-height: 520px;
+    }
   }
 
   &__img {
     width: 100%;
     height: 100%;
     min-height: 473px;
+    
+    @media (max-width: $sm) { 
+      min-height: 520px;
+    }
   }
 
   &__head {
@@ -41,6 +52,11 @@
     font-size: 24px;
     line-height: 32px;
     max-width: 750px;
+
+    @media (max-width: $sm) { 
+      margin-top: 48px;
+    }
+
   }
 
   &__text {
