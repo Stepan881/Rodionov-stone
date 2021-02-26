@@ -74,6 +74,7 @@
           transform: scale(1.7);
           background: $accent;
           border: 1px solid #37373700;
+
           @media (max-width: $sm) {
             transform: scale(1.5);
           }
@@ -111,6 +112,11 @@
       height: 59px;
       left: -100px;
       top: 0;
+
+      @media (max-width: $xl) {
+        content: none;
+      }
+
     }
   }
 
@@ -150,5 +156,15 @@
 @media (max-width: $sm) {
   .slider {
     margin: 0;
+
+    .slider-photos {
+      min-height: 556px;
+      padding: 0;
+      min-height: auto;
+      margin: 0;
+    }
+    .slider__rewiews {
+      padding: 0 10px;
+    }
   }
 }

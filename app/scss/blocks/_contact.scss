@@ -1,5 +1,11 @@
 .contact {
 
+  &__mobile {
+    display: none;
+    @media (max-width: $md) {
+      display: block;
+    }
+  }
 
   .row {
     @media (max-width: $md) {
@@ -10,15 +16,18 @@
 
   background-color: $white;
 
-  &--dark {
-    background: $bd-dark;
-  }
-
   &__title,
   &__sub-title {
     font-weight: bold;
     font-size: 28px;
     line-height: 38px;
+  }
+
+  &__sub-title {
+    @media (max-width: $md) {
+      margin-bottom: 60px;
+    }
+
   }
 
   &__right {
@@ -65,8 +74,8 @@
     @media (max-width: $md) {
       font-size: 14px;
       line-height: 40px;
+      margin-top: 30px;
     }
-
   }
 
   &__text {
@@ -94,7 +103,7 @@
       font-size: 24px;
       line-height: 33px;
       max-width: 239px;
-      margin-bottom: 0;
+      margin: 0;
     }
   }
 }

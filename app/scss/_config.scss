@@ -61,10 +61,12 @@ $lg: 992px;
 $xl: 1200px;
 $xxl: 1400px;
 
-@mixin adaptiv-font($pcSize, $mobSize) {
+@mixin adaptiv-font($pcSize, $mobSize, $pcFS, $monFS) {
 	$addSize: $pcSize - $mobSize;
+	$addSizeFS: $pcFS - $monFS;
 	$maxWidth: $maxWidth - 320;
 	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+	line-height: calc(#{$monFS + px} + #{$addSizeFS} * ((100vw - 320px) / #{$maxWidth}));
 }
 
 // @include adaptiv-font(40, 20);
@@ -161,4 +163,14 @@ button {
 	font-weight: 300;
 	font-size: 24px;
 	line-height: 40px;
+}
+
+.contact-bg-dark {
+	.contact {
+		background: $bd-dark;
+
+		@media (max-width: $md) { 
+			background: $white;
+		}
+	}	
 }

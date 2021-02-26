@@ -7,11 +7,19 @@
     height: auto;
     min-height: auto;
   }
+
   .slider-photos {
     margin: 20px;
   }
+
   .slider-prew,
   .slider-next {
     top: calc(50% - 90px);
+  }
+
+  @media (max-width: $sm) {
+    .gallery__title {
+      text-align: left;
+    }
   }
 }

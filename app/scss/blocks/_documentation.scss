@@ -18,5 +18,9 @@
 
   .slider-slide {
     padding: 0 24px;
+
+    @media (max-width: $md) { 
+      padding: 0px 65px;
+    }
   }
 }

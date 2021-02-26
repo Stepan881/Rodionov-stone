@@ -7,7 +7,7 @@
 
     @media (max-width: $md) {
 
-      padding: 60px 0;
+      padding: 50px 0;
       display: flex;
       justify-content: center;
       margin: 0 auto;
@@ -36,14 +36,18 @@
     order: 3;
     margin-top: 90px;
     color: #BEBEBE;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
 
     @media (max-width: $md) {
-      margin-top: 18px;
+      margin-top: 5px;
       width: 100%;
       padding: 0;
       text-align: center;
       justify-content: center;
       order: 1;
+
     }
   }
 
@@ -58,7 +62,7 @@
     }
 
     @media (max-width: $md) {
-      margin: 48px auto 0;
+      margin: 32px auto 0;
       width: 100%;
       padding: 0;
       text-align: center;
@@ -79,6 +83,9 @@
     text-align: center;
     color: $white;
     transition: 0.3s;
+    font-size: 14px;
+    line-height: 22px;
+    transition: 0.3s;
 
     @media (max-width: $md) {
       margin: 48px auto 0;
@@ -90,6 +97,7 @@
     }
     
     &:hover {
+      transition: 0.3s;
       color: $white;
       font-weight: bold;
     }
@@ -101,6 +109,8 @@
     margin-top: 90px;
     text-align: right;
     color: #BEBEBE;
+    font-size: 14px;
+    line-height: 22px;
 
     @media (max-width: $md) {
       margin: 24px auto 0;

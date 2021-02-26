@@ -2,11 +2,20 @@
 
   &__title {
     margin-top: 97px;
+
+    @media (max-width: $md) {
+      margin-top: 100px;
+    }
   }
-  
+
   &__images {
     margin-top: 78px;
     padding-bottom: 80px;
+
+    @media (max-width: $md) {
+      margin-top: 31px;
+      padding-bottom: 53px;
+    }
   }
 
   &__wrapper {
@@ -14,11 +23,15 @@
     width: 25%;
     padding: 13px 34px;
     margin-bottom: 25px;
+
+    @media (max-width: $md) {
+      width: 50%;
+      margin-bottom: 10px;
+    }
   }
-  
+
   &__icon {
     height: 100%;
     object-fit: contain;
   }
 }
-

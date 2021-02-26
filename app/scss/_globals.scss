@@ -48,17 +48,21 @@ $paragraph-margin-bottom:   1rem !default;
 
 // scss-docs-start grid-breakpoints
 
-// 	@include adaptiv-font(24, 20);  
+// 	@include adaptiv-font(24, 20, 20, 20); 
 
-// @media (max-width: $sm) { 
-// }
-// @media (max-width: $md) { 
-// }
-// @media (max-width: $lg) { 
-// }
-// @media (max-width: $lg) { 
-// }
+/*
 
+@media (max-width: $sm) { 
+}
+@media (max-width: $md) { 
+}
+@media (max-width: $lg) { 
+}
+@media (max-width: $lg) { 
+}
+@media (max-width: $xl) { 
+}
+*/
 
 $grid-breakpoints: (
   xs: 0,

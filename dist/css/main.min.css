@@ -1,5 +1,19 @@
 @charset "UTF-8";
 
+/*
+
+@media (max-width: $sm) { 
+}
+@media (max-width: $md) { 
+}
+@media (max-width: $lg) { 
+}
+@media (max-width: $lg) { 
+}
+@media (max-width: $xl) { 
+}
+*/
+
 /*!
  * Bootstrap v5.0.0-beta2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -7263,6 +7277,10 @@ button {
   line-height: 40px;
 }
 
+.contact-bg-dark .contact {
+  background: #F7F7F7;
+}
+
 /* Slider */
 
 .slick-loading .slick-list {
@@ -8022,7 +8040,8 @@ button {
 .about__bg {
   position: absolute;
   z-index: -1;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   width: 100%;
 }
 
@@ -8031,7 +8050,8 @@ button {
 }
 
 .about__wrapper {
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   max-width: 905px;
   margin: 0 auto;
   display: -webkit-box;
@@ -8063,8 +8083,8 @@ button {
   color: #ffffff;
   margin-top: 60px;
   font-weight: normal;
-  font-size: 24px;
-  line-height: 34px;
+  font-size: calc(18px + 6 * ((100vw - 320px) / 1120));
+  line-height: calc(26px + 8 * ((100vw - 320px) / 1120));
 }
 
 .advantages-col-3 {
@@ -8120,18 +8140,18 @@ button {
 }
 
 .advantages__title {
-  font-weight: bold;
   margin-top: 108px;
   max-width: 736px;
-  font-size: calc(20px + 4 * ((100vw - 320px) / 1120));
-  line-height: 33px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
   margin-bottom: 0;
 }
 
 .advantages__text {
-  font-size: calc(20px + 4 * ((100vw - 320px) / 1120));
-  line-height: 33px;
   font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
   max-width: 560px;
   margin: 0;
 }
@@ -8448,8 +8468,8 @@ button {
   background-color: #ffffff;
 }
 
-.contact--dark {
-  background: #F7F7F7;
+.contact__mobile {
+  display: none;
 }
 
 .contact__title,
@@ -8653,6 +8673,9 @@ button {
   order: 3;
   margin-top: 90px;
   color: #BEBEBE;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 .footer__social {
@@ -8681,9 +8704,15 @@ button {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  font-size: 14px;
+  line-height: 22px;
+  transition: 0.3s;
 }
 
 .footer__agreement:hover {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
   color: #ffffff;
   font-weight: bold;
 }
@@ -8696,6 +8725,8 @@ button {
   margin-top: 90px;
   text-align: right;
   color: #BEBEBE;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 .footer__development a {
@@ -15114,6 +15145,12 @@ button {
   }
 }
 
+@media (max-width: 1200px) {
+  .slider__text::before {
+    content: none;
+  }
+}
+
 @media (max-width: 1199.98px) {
   .table-responsive-xl {
     overflow-x: auto;
@@ -15157,14 +15194,16 @@ button {
 
   .advantages__title {
     margin-top: 40px;
+    font-size: 20px;
   }
 
   .advantages__text {
-    margin-top: 20px;
+    margin-top: 8px;
+    font-size: 20px;
   }
 
   .advantages .title {
-    margin-top: 60px;
+    margin-top: 40px;
   }
 
   .advantages__block {
@@ -15329,7 +15368,7 @@ button {
     padding-left: 107px;
     max-width: 375px;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
   }
 
   .header .nav .social__link {
@@ -15428,6 +15467,10 @@ button {
 }
 
 @media (max-width: 768px) {
+  .contact-bg-dark .contact {
+    background: #ffffff;
+  }
+
   .slider .slider-pagination {
     display: none;
   }
@@ -15442,6 +15485,18 @@ button {
     width: 100%;
   }
 
+  .advantages__block {
+    margin-top: 6px;
+  }
+
+  .advantages__card {
+    margin-bottom: 16px;
+  }
+
+  .contact__mobile {
+    display: block;
+  }
+
   .contact .row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -15450,6 +15505,10 @@ button {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  .contact__sub-title {
+    margin-bottom: 60px;
   }
 
   .contact__right {
@@ -15470,6 +15529,7 @@ button {
   .contact__head {
     font-size: 14px;
     line-height: 40px;
+    margin-top: 30px;
   }
 
   .contact__address {
@@ -15477,11 +15537,15 @@ button {
     font-size: 24px;
     line-height: 33px;
     max-width: 239px;
-    margin-bottom: 0;
+    margin: 0;
+  }
+
+  .documentation .slider-slide {
+    padding: 0px 65px;
   }
 
   .footer__wrapper {
-    padding: 60px 0;
+    padding: 50px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -15500,7 +15564,7 @@ button {
   }
 
   .footer__copyright {
-    margin-top: 18px;
+    margin-top: 5px;
     width: 100%;
     padding: 0;
     text-align: center;
@@ -15513,7 +15577,7 @@ button {
   }
 
   .footer__social {
-    margin: 48px auto 0;
+    margin: 32px auto 0;
     width: 100%;
     padding: 0;
     text-align: center;
@@ -15571,6 +15635,20 @@ button {
 
   .news__btn {
     margin: 38px auto 68px;
+  }
+
+  .partners__title {
+    margin-top: 100px;
+  }
+
+  .partners__images {
+    margin-top: 31px;
+    padding-bottom: 53px;
+  }
+
+  .partners__wrapper {
+    width: 50%;
+    margin-bottom: 10px;
   }
 
   .instagram__content {
@@ -15658,6 +15736,39 @@ button {
     margin: 0;
   }
 
+  .slider .slider-photos {
+    min-height: 556px;
+    padding: 0;
+    min-height: auto;
+    margin: 0;
+  }
+
+  .slider .slider__rewiews {
+    padding: 0 10px;
+  }
+
+  .about__bg {
+    min-height: auto;
+  }
+
+  .about__wrapper {
+    min-height: auto;
+  }
+
+  .about__logo {
+    margin-top: 105px;
+  }
+
+  .about__logo-img {
+    width: 161px;
+    height: 199px;
+  }
+
+  .about__text {
+    text-align: left;
+    margin-bottom: 58px;
+  }
+
   .advantages__block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -15739,6 +15850,10 @@ button {
 
   .card-projects {
     margin: 0 -0.75rem 25px;
+  }
+
+  .reviews .gallery__title {
+    text-align: left;
   }
 }
 
