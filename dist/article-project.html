@@ -224,50 +224,75 @@
         <p class="article-project__header">В коттедже просторная кухня-гостиная, 4 отдельных комнаты, кладовая у кухни, где хозяйка может хранить заготовки и кухонную утварь. Большие ванные комнаты, где можно установить джакузи или комфортную ванную в центре (одна из ванных комнат с окном). Также, есть отдельное помещение под прачечную, что тоже очень удобно!</p>
         <p class="article-project__header">Успевайте приобрести загородное жильё с собственным земельным участком по цене двухкомнатной квартиры в Калининграде </p>
       </div>
-      <a href="#" class="article-project__bg-map">
+      <div class="article-project__bg-map">
+        <a class="article-project__bg-map__link"  href="./images/article/plan.jpg">
+          <svg width="42" height="49" viewBox="0 0 42 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="18.0923" cy="18.023" r="15.523" stroke="#C4C4C4" stroke-width="5" />
+            <line x1="28.3598" y1="31.408" x2="39.362" y2="45.4909" stroke="#C4C4C4" stroke-width="5" stroke-linecap="round" />
+            <line x1="11.0176" y1="18.9023" x2="25.167" y2="18.9023" stroke="#C4C4C4" stroke-width="5" stroke-linecap="round" />
+            <line x1="17.7764" y1="12.0747" x2="17.7764" y2="24.5345" stroke="#C4C4C4" stroke-width="5" stroke-linecap="round" />
+          </svg>
+        </a>
         <img class="article-project__img-map" src="./images/article/plan.jpg" alt="План">
-      </a>
-      <a href="#" class="article-project__download" download="#"></a>
+      </div>
+
+      <div class="article-project__download">
+        <a href="#" class="button button-red" download="#">Скачать план в PDF</a>
+      </div>
+
     </div>
   </section>
 
+
   <section class="contact article-project">
-    <div class="row">
-      <div class="contact__left">
-        <div class="article-project__wrapper">
-          <h2 class="contact__title">Свяжитесь с нами</h2>
-          <form class="contact__form form" action="#">
-            <p class="form__wrapper">
-              <label class="form__label">
-                <input class="form__input" type="text" name="name" placeholder="Имя">
-              </label>
-            </p>
-            <p class="form__wrapper">
-              <label class="form__label">
-                <input class="form__input" type="text" name="name" placeholder="Телефон">
-              </label>
-            </p>
-            <p class="form__wrapper">
-              <label class="form__label">
-                <input class="form__input" type="text" name="name" placeholder="E-mail">
-              </label>
-            </p>
-            <p class="form__wrapper">
-              <label class="form__label">
-                <input class="form__input" type="text" name="name" placeholder="Комментарий">
-              </label>
-            </p>
-            <button class="button" type="submit">
-              <span class="button__text">Отправить</span>
-            </button>
-          </form>
-        </div>
+    <div class="container">
+      <div class="row">
+        <div class="contact__left">
+          <h2 class="contact__title">Записаться на экскурсию</h2>
+          <div class="contact__form-container">
+            <div class="wpforms-container form" id="wpforms-16">
+  <form id="wpforms-form-16" class="wpforms-validate wpforms-form wpforms-ajax-form" data-formid="16" method="post" enctype="multipart/form-data" action="/" data-token="1a45f0c3c78408a1000317528aa9999d" novalidate="novalidate">
+    <noscript class="wpforms-error-noscript">Пожалуйста, включите JavaScript в вашем браузере для заполнения данной формы.</noscript>
+    <div class="wpforms-field-container">
+
+      <div id="wpforms-16-field_2-container" class="wpforms-field wpforms-field-text form__item" data-field-id="2">
+        <input type="text" id="wpforms-16-field_2" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][2]" required="" autocomplete="off" placeholder="Имя">
+        <label class="wpforms-error" for="wpforms-16-field_2">Некорректно введено Имя</label>
       </div>
-      <div class="article-project__img-wrapper">
-        <img class="article-project__img" src="./images/article/contact.jpg" srcset="./images/article/contact@2x.jpg 2x" alt="inst">
+      <div id="wpforms-16-field_3-container" class="wpforms-field wpforms-field-phone form__item" data-field-id="3">
+        <input type="tel" id="wpforms-16-field_3" class="wpforms-field-large wpforms-field-required" data-rule-int-phone-field="true" name="wpforms[fields][3]" required="" autocomplete="off" placeholder="Телефон"/>
+        <label class="wpforms-error" for="wpforms-16-field_3">Некорректно введён телефон</label>
+      </div>
+      <div id="wpforms-16-field_4-container" class="wpforms-field wpforms-field-email form__item" data-field-id="4">
+        <input type="email" id="wpforms-16-field_4" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][4]" required="" autocomplete="off" placeholder="E-mail"/>
+        <label class="wpforms-error" for="wpforms-16-field_4">Некорректно введён e-mail</label>
+      </div>
+      <div id="wpforms-16-field_5-container" class="wpforms-field wpforms-field-text form__item form__item--bottom" data-field-id="5">
+        <input type="text" id="wpforms-16-field_5" class="wpforms-field-large" name="wpforms[fields][5]" autocomplete="off" placeholder="Комментарий"/>
+        <label class="wpforms-error" for="wpforms-16-field_4">Некорректно введён комментарий</label>
       </div>
     </div>
 
+    <div class="wpforms-submit-container">
+      <p class="form__politics">Нажимая на кнопку “Отправить” вы принимаете условия <a href="#">“Политики конфиденциальности.”</a> </p>
+      <input type="hidden" name="wpforms[id]" value="16" autocomplete="off" /><input type="hidden" name="wpforms[author]" value="1" autocomplete="off" />
+      <input type="hidden" name="wpforms[post_id]" value="330" autocomplete="off" />
+
+      <button type="submit" name="wpforms[submit]" class="js-submit wpforms-submit" id="wpforms-submit-16" value="wpforms-submit" aria-live="assertive" data-alt-text="Отправка..." data-submit-text="Отправить">Отправить</button>
+
+      <img src="https://kaliningrad-travel.com/wp-content/plugins/wpforms/assets/images/submit-spin.svg" class="wpforms-submit-spinner" style="display: none;" width="26" height="26" alt="" />
+    </div>
+  </form>
+</div>
+          </div>
+        </div>
+        <div class="contact__right article-project__right">
+          <div class="article-project__img-wrapper">
+            <img class="article-project__img" src="./images/article/contact.jpg" srcset="./images/article/contact@2x.jpg 2x" alt="inst">
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </main>
 

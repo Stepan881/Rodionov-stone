@@ -200,6 +200,51 @@
     }
   }
 
+  &__bg-map {
+    min-height: 804px;
+    width: 100%;
+    border: 1px solid #C4C4C4;
+    margin: 80px 0 61px;
+    position: relative;
+    height: 100px;
+    display: flex;
+
+    @media (max-width: $md) { 
+      min-height: auto;
+      max-height: 346px;
+      height: 100%;
+    }
+
+  }
+
+  &__img-map {
+    display: flex;
+    height: 100%;
+
+  }
+
+  &__bg-map__link {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+  }
+
+  &__download {
+    padding-bottom: 88px;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: $md) { 
+
+      
+
+      .button {
+        width: 100%;
+      }
+    }
+  }
+
   .article-project__gallery {
     .slick-slide {
       opacity: 0.6;

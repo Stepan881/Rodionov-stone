@@ -131,18 +131,40 @@
 
   .article-project {
 
-    &__wrapper {
-      max-width: 700px;
-      margin-left: auto;
+    &__right {
+      padding: 0;
+
+      @media (max-width: $md) { 
+        order: -1;
+      }
     }
 
     &__img-wrapper {
-      width: 50%;
-      padding: 0;
+      width: calc(100vw / 2);
+      height: 100%;
 
       @media (max-width: $md) { 
         width: 100%;
       }
+
+      @media (max-width: $md) { 
+        margin: 0 -120px;
+        width: calc(100% + 240px);
+      }
+
     }
+
+    &__img {
+      min-width: 100%;
+      min-height: 100%; 
+      position: relative;     
+      z-index: 1;
+
+      @media (max-width: $md) { 
+        max-height: 320px; 
+      }
+    }
+
+
   }
 }

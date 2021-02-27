@@ -4,7 +4,23 @@
 
 .header__white {
   .nav__link.active {
-    text-shadow: 0 0 0px $white, 0 0 0px $white;
+    // text-shadow: 0 0 0px $white, 0 0 0px $white;
+  }
+
+  .header__btn.header__open {
+    line {
+      stroke: $primary;
+    }
+  }
+  @media (max-width: $lg) { 
+    &.open-menu {
+      .logo__svg {
+        path {
+          transition: 0.3s;
+          fill: $primary;
+        }
+      }
+    }
   }
 }
 
@@ -248,6 +264,7 @@
         left: 0;
         bottom: 0;
         visibility: visible;
+        background: $white;
       }
 
       &__overlay {
@@ -276,6 +293,11 @@
         font-weight: normal;
         font-size: 18px;
         line-height: 26px;
+        color: $primary;
+
+        &:hover {
+          text-shadow: 0 0 0px $primary, 0 0 0px $primary;
+        }
       }
 
       .tel {
@@ -287,6 +309,7 @@
         font-size: 18px;
         line-height: 24px;
         position: relative;
+        color: $primary;
 
         &::before {
           position: absolute;
@@ -308,12 +331,26 @@
 
         &__link {
           padding: 16px;
+
+          svg {
+            width: 32px;
+            height: 32px;
+
+            path {
+              stroke: $primary;
+            }
+          }
+
+          &:hover {
+            svg {
+              path {
+                stroke: $accent;
+              }
+            }
+          }
         }
 
-        svg {
-          width: 32px;
-          height: 32px;
-        }
+
 
         .social__svg {
           width: 10px;
@@ -331,6 +368,7 @@
       }
     }
   }
+
 }
 
 @media (max-width: $sm) {

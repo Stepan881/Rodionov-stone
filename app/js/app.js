@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			asNavFor: '#slide-priject-min'
 		});
 		$('#slide-priject-min').slick({
-			infinite: false,
+			infinite: true,
 			variableWidth: true,
 			swipeToSlide: true,
 			asNavFor: '#slide-priject-big',
@@ -110,9 +110,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 	sliderProject();
 
-
-
-
 	function headerColor() {
 		function toggle() {
 			var height = $(window).scrollTop();
@@ -134,10 +131,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 	headerColor();
 
-
 	// отзрыть закрыть меню
 	function navMenu() {
-
+		let header = document.querySelector('.header');
 		let btn = document.querySelector('.js-open-nav');
 		let menu = document.querySelector('.js-nav-menu');
 		let overlay = document.querySelector('.js-nav-overlay');
@@ -145,11 +141,13 @@ document.addEventListener('DOMContentLoaded', () => {
 		btn.addEventListener('click', function () {
 			this.classList.toggle('header__open');
 			menu.classList.toggle('nav--open');
+			header.classList.toggle('open-menu')
 		});
 
 		overlay.addEventListener('click', function (evt) {
 			btn.classList.remove('header__open');
 			menu.classList.remove('nav--open');
+			header.classList.remove('open-menu');
 		});
 	};
 
@@ -169,15 +167,19 @@ document.addEventListener('DOMContentLoaded', () => {
 			console.log('Нет модалок или  класса .js-open-form');
 			return;
 		}
+
 		function openForm() {
 			form.classList.add('open');
 		}
+
 		function closeForm() {
 			form.classList.remove('open');
 		}
+
 		function openSuccess() {
 			success.classList.add('open');
 		}
+
 		function closeSuccess() {
 			success.classList.remove('open');
 		}
@@ -200,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				evt.preventDefault();
 				closeForm();
 				openSuccess();
-			}	
+			}
 		})
 
 		success.addEventListener('click', function (evt) {
@@ -220,11 +222,11 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 
 		// close ecs keydown
-		
-		document.addEventListener('keydown', function(evt) {
-			
+
+		document.addEventListener('keydown', function (evt) {
+
 			let form = document.querySelector('.popup.open');
-			if (event.keyCode == 27 && form) { 
+			if (event.keyCode == 27 && form) {
 				closeForm();
 				closeSuccess();
 			}
