@@ -1,5 +1,5 @@
 let preprocessor = 'scss', // Preprocessor (sass, less, styl); 'sass' also work with the Scss syntax in blocks/ folder.
-		fileswatch   = 'html,htm,txt,json,md,woff2' // List of files extensions for watching & hard reload
+		fileswatch   = 'html,htm,txt,json,md,woff,woff2' // List of files extensions for watching & hard reload
 
 const { src, dest, parallel, series, watch } = require('gulp')
 const browserSync  = require('browser-sync').create()
@@ -76,10 +76,10 @@ function styles() {
 }
 
 function images() {
-	return src(['app/images/src/**/*'])
-		.pipe(newer('app/images/dist'))
-		.pipe(imagemin())
-		.pipe(dest('app/images/dist'))
+	return src(['app/images/**/*'])
+		// .pipe(newer('dist/images/'))
+    .pipe(imagemin())
+		.pipe(dest('dist/images'))
 		.pipe(browserSync.stream())
 }
 
@@ -146,7 +146,7 @@ function deploy() {
 function startwatch() {
 	watch(`app/${preprocessor}/**/*`, { usePolling: true }, styles)
 	watch(['app/js/**/*.js', '!app/js/**/*.min.js'], { usePolling: true }, scripts)
-	watch('app/images/src/**/*.{jpg,jpeg,png,webp,svg,gif}', { usePolling: true }, images)
+	watch('app/images/**/*.{jpg,jpeg,png,webp,svg,gif}', { usePolling: true }, images)
 	watch(`app/**/*.{${fileswatch}}`, { usePolling: true }).on( 'change', includeHTML )
 	watch(`app/**/*.{${fileswatch}}`, { usePolling: true }).on( 'change', browserSync.reload )
 }
@@ -162,3 +162,4 @@ exports.includeHTML = includeHTML;
 exports.assets  = series(scripts, styles, images)
 exports.build   = series(cleandist, scripts, styles, images, buildcopy, /*buildhtml,*/ includeHTML)
 exports.default = series(scripts, styles, images, parallel(browsersync, startwatch))
+exports.start   = series(cleandist, buildcopy, scripts, styles, images, includeHTML, parallel(browsersync, startwatch))
