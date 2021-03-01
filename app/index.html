@@ -1,5 +1,5 @@
 @@include('./head.html', {
-	"title": "Главная"
+"title": "Главная"
 })
 
 @@include('./parts/header.html', {
@@ -7,6 +7,38 @@
 })
 
 <main class="index">
+	<div class="chat-icon">
+		<button class="chat-icon-btn">
+			<svg width="116" height="130" viewBox="0 0 116 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<g filter="url(#filter0_d)">
+					<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="30" y="26" width="70" height="70">
+						<circle cx="65" cy="61" r="35" fill="#C4C4C4" />
+					</mask>
+					<g mask="url(#mask0)">
+						<rect x="-11.5" y="-11.4167" width="126.583" height="131.833" fill="#E2704C" />
+					</g>
+					<g clip-path="url(#clip0)">
+						<path d="M70.6286 50.7214C68.521 46.4178 64.1122 43.5726 59.1668 43.5726C52.0907 43.5726 46.3338 49.2968 46.3338 56.3328C46.3338 58.2449 46.7443 60.0776 47.5546 61.7864L46.355 67.7847C46.2023 68.5483 46.8759 69.2232 47.6396 69.0721L53.7119 67.8715C54.5295 68.2594 55.3753 68.5543 56.2444 68.7575C54.2963 59.5308 61.2901 50.87 70.6286 50.7214Z" fill="white" />
+						<path d="M82.4456 71.1194C82.6551 70.6775 82.8373 70.2272 82.9932 69.7695H82.9532C85.6837 61.7549 79.9414 53.3315 71.4642 52.9213C71.4641 52.9209 71.464 52.9204 71.4638 52.92C64.1697 52.5839 58.1096 58.4241 58.1096 65.6658C58.1096 72.6959 63.8233 78.4155 70.851 78.4257C72.7572 78.4232 74.5843 78.0128 76.2881 77.2046C82.9385 78.5194 82.4198 78.426 82.5726 78.426C83.2637 78.426 83.78 77.7926 83.6451 77.1178L82.4456 71.1194Z" fill="white" />
+					</g>
+				</g>
+				<defs>
+					<filter id="filter0_d" x="0" y="0" width="130" height="130" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+						<feFlood flood-opacity="0" result="BackgroundImageFix" />
+						<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+						<feOffset dy="4" />
+						<feGaussianBlur stdDeviation="15" />
+						<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+						<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+						<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+					</filter>
+					<clipPath id="clip0">
+						<rect width="37.3333" height="37.3333" fill="white" transform="translate(46.3333 42.3333)" />
+					</clipPath>
+				</defs>
+			</svg>
+		</button>
+	</div>
 
 	<section class="first-screen">
 		<picture class="first-screen__bg">
@@ -83,14 +115,12 @@
 						</div>
 					</div>
 					<picture class="card-projects__img-wrapper">
-						<img class="card-projects__img" src="./images/index/joy.png" srcset="./images/index/joy@2x.png 2x"
-							alt="ДЖОЙ">
+						<img class="card-projects__img" src="./images/index/joy.png" srcset="./images/index/joy@2x.png 2x" alt="ДЖОЙ">
 					</picture>
 				</div>
 				<div class="card-projects flex-row-wrap">
 					<picture class="card-projects__img-wrapper">
-						<img class="card-projects__img" src="./images/index/grace.jpg" srcset="./images/index/grace@2x.jpg 2x"
-							alt="GRACE">
+						<img class="card-projects__img" src="./images/index/grace.jpg" srcset="./images/index/grace@2x.jpg 2x" alt="GRACE">
 					</picture>
 					<div class="card-projects__block col">
 						<span class="card-projects__info">Коттеджных посёлок</span>
@@ -113,7 +143,7 @@
 	<section class="gallery">
 		<div class="container">
 			<h2 class="gallery__title">Фотогалерея</h2>
-      <div class="gallery__slider">
+			<div class="gallery__slider">
 				@@include('./parts/sliders/sliders-gallery.html')
 			</div>
 		</div>
@@ -134,18 +164,12 @@
 				</div>
 				<div class="instagram__images">
 					<div class="instagram__photos">
-						<img class="instagram-screen__bg" src="./images/index/Instagram1.jpg"
-							srcset="./images/index/Instagram1@2x.jpg 2x" alt="inst">
-						<img class="instagram-screen__bg" src="./images/index/Instagram2.jpg"
-							srcset="./images/index/Instagram2@2x.jpg 2x" alt="inst">
-						<img class="instagram-screen__bg" src="./images/index/Instagram3.jpg"
-							srcset="./images/index/Instagram3@2x.jpg 2x" alt="inst">
-						<img class="instagram-screen__bg" src="./images/index/Instagram4.jpg"
-							srcset="./images/index/Instagram4@2x.jpg 2x" alt="inst">
-						<img class="instagram-screen__bg" src="./images/index/Instagram5.jpg"
-							srcset="./images/index/Instagram5@2x.jpg 2x" alt="inst">
-						<img class="instagram-screen__bg" src="./images/index/Instagram6.jpg"
-							srcset="./images/index/Instagram6@2x.jpg 2x" alt="inst">
+						<img class="instagram-screen__bg" src="./images/index/Instagram1.jpg" srcset="./images/index/Instagram1@2x.jpg 2x" alt="inst">
+						<img class="instagram-screen__bg" src="./images/index/Instagram2.jpg" srcset="./images/index/Instagram2@2x.jpg 2x" alt="inst">
+						<img class="instagram-screen__bg" src="./images/index/Instagram3.jpg" srcset="./images/index/Instagram3@2x.jpg 2x" alt="inst">
+						<img class="instagram-screen__bg" src="./images/index/Instagram4.jpg" srcset="./images/index/Instagram4@2x.jpg 2x" alt="inst">
+						<img class="instagram-screen__bg" src="./images/index/Instagram5.jpg" srcset="./images/index/Instagram5@2x.jpg 2x" alt="inst">
+						<img class="instagram-screen__bg" src="./images/index/Instagram6.jpg" srcset="./images/index/Instagram6@2x.jpg 2x" alt="inst">
 					</div>
 				</div>
 			</div>
