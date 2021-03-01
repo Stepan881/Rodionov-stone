@@ -233,37 +233,22 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 	openForm();
+
+
+	function heightHeader() {
+		window.addEventListener("resize", () => {
+			resize();
+		});
+
+		function resize() {
+			const header = document.querySelector('.header').clientHeight;
+			let heightHeader = document.querySelector('.height-header');
+			if (heightHeader) {
+				heightHeader.style.marginTop = header + 'px';
+			}
+		}
+		resize();
+	}
+	heightHeader();
+
 });
-
-
-
-
-
-
-
-
-
-// const btnOpenForm = document.querySelectorAll('.js-open-form');
-// const form = document.querySelector('.popup-form');
-// const success = document.querySelector('.popup-success');
-
-// btnOpenForm.forEach(el => {
-// 	el.addEventListener('click', evt => {
-// 		evt.preventDefault();
-// 		form.classList.add('open');
-// 	})
-// });
-// form.addEventListener('click', evt => {
-
-// 	if (evt.target.matches('.popup-overlay')) {
-// 		form.classList.remove('open')
-// 	}	
-
-// 	if (evt.target.matches('.js-submit')) {
-// 		form.classList.remove('open');
-// 		success.classList.add('open');
-// 		console.log(1);
-// 	}	
-
-// 	console.log('evt.target: ', evt.target);
-// })
