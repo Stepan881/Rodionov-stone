@@ -8,8 +8,10 @@
 @import './globals.scss';
 
 // Optional
-@import '../libs/bootstrap/scss/bootstrap.scss';
 @import '../libs/bootstrap/scss/bootstrap-reboot.scss';
+@import '../libs/bootstrap/scss/bootstrap-grid.scss';
+@import '../libs/bootstrap/scss/_nav.scss';
+//@import '../libs/bootstrap/scss/bootstrap.scss';
 
 
 // FONTS LOAD SECTION
@@ -131,14 +133,14 @@ button {
 	border: none;
 }
 
-.col {
+.flex-col-wrap {
 	display: flex;
 	flex-direction: column;
 	margin: 0;
 	padding: 0;
 }
 
-.row {
+.flex-row-wrap {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;

@@ -24,33 +24,35 @@
 
 	<section class="advantages">
 		<div class="container">
-			<div class="col">
+			<div class="flex-col-wrap">
 				<h2 class="advantages__title">Regera Group</h2>
-				<p class="advantages__text">Cтроительная компания, которая возводит таунхаусы и коттеджи в Калининграде и на
+				<p class="advantages__text pb-3">Cтроительная компания, которая возводит таунхаусы и коттеджи в Калининграде и на
 					побережье Калининградской области. На страницах компаний представлено описание и информация о</p>
 			</div>
-			<div class="col">
+			<div class="flex-col-wrap">
 				<h2 class="title">Наши преимущества</h2>
 				<div class="advantages__block row">
-					<div class="card-advantages row">
+
+					<div class="card-advantages col-12 col-md-6 col-lg-3">
 						<span class="card-advantages__header">15000<b>м2</b></span>
 						<span class="card-advantages__text">Введено в эксплуатацию</span>
 					</div>
 
-					<div class="card-advantages row">
+					<div class="card-advantages col-12 col-md-6 col-lg-3">
 						<span class="card-advantages__header">130+</span>
 						<span class="card-advantages__text">Довольных клиентов</span>
 					</div>
 
-					<div class="card-advantages row">
+					<div class="card-advantages col-12 col-md-6 col-lg-3">
 						<span class="card-advantages__header">10 <b>лет</b></span>
 						<span class="card-advantages__text">Опыт строительства</span>
 					</div>
 
-					<div class="card-advantages row">
+					<div class="card-advantages col-12 col-md-6 col-lg-3">
 						<span class="card-advantages__header">90 <b>дней</b></span>
 						<span class="card-advantages__text">Средний срок строительства</span>
 					</div>
+
 				</div>
 				<div class="advantages__button">
 					@@include('./parts/buttons/button-more.html', {
@@ -66,7 +68,7 @@
 		<div class="container">
 			<h2 class="projects__title title">Наши проекты</h2>
 			<div class="projects__wrapper col">
-				<div class="card-projects row">
+				<div class="card-projects flex-row-wrap">
 					<div class="card-projects__block col">
 						<span class="card-projects__info">Коттеджных посёлок</span>
 						<h3 class="card-projects__header">джой</h3>
@@ -85,7 +87,7 @@
 							alt="ДЖОЙ">
 					</picture>
 				</div>
-				<div class="card-projects row">
+				<div class="card-projects flex-row-wrap">
 					<picture class="card-projects__img-wrapper">
 						<img class="card-projects__img" src="./images/index/grace.jpg" srcset="./images/index/grace@2x.jpg 2x"
 							alt="GRACE">
@@ -121,7 +123,7 @@
 		<div class="container">
 			<div class="instagram__wrapper">
 				<div class="instagram__content">
-					<h2 class="instagram__title">Подписывайтесь на наш Instagram, чтобы следить за ходом строительства</h2>
+					<h2 class="instagram__title">Подписывайтесь<br>на наш Instagram,<br>чтобы следить за ходом строительства</h2>
 
 				</div>
 				<div class="instagram__btn">
@@ -152,10 +154,10 @@
 
 	<section class="news">
 		<div class="container">
-			<div class="col">
-				<h2 class="news__title title">Последние новости</h2>
-				<div class="news__wrapper row">
+			<h2 class="news__title title">Последние новости</h2>
+			<div class="news__wrapper row">
 
+				<div class="col-12 col-md-6 col-xl-4 py-3">
 					@@include('./parts/cards/card-simple.html', {
 					"img": "./images/index/news1.jpg",
 					"img2": "./images/index/news1@2x.jpg 2x",
@@ -163,7 +165,8 @@
 					"title": "Рубрика 'Вопрос-Ответ'",
 					"text": "Продолжаем нашу рубрику «Вопрос-ответ». В этот раз ответим на ваши вопросы по утилизации мусора и расценок на коммунальные услуги."
 					})
-
+				</div>
+				<div class="col-12 col-md-6 col-xl-4 py-3">
 					@@include('./parts/cards/card-simple.html', {
 					"img": "./images/index/news2.jpg",
 					"img2": "./images/index/news2@2x.jpg 2x",
@@ -171,7 +174,8 @@
 					"title": "Построено 30 домов в ЖК",
 					"text": "Продолжаем нашу рубрику «Вопрос-ответ». В этот раз ответим на ваши вопросы по утилизации мусора и расценок на коммунальные услуги."
 					})
-
+				</div>
+				<div class="col-12 col-md-6 col-xl-4 py-3">
 					@@include('./parts/cards/card-simple.html', {
 					"img": "./images/index/news3.png",
 					"img2": "./images/index/news3@2x.png 2x",
@@ -179,15 +183,15 @@
 					"title": "Дарим подарки всем новым жильцам",
 					"text": "Продолжаем нашу рубрику «Вопрос-ответ». В этот раз ответим на ваши вопросы по утилизации мусора и расценок на коммунальные услуги."
 					})
-
 				</div>
 
-				<div class="news__btn">
-					@@include('./parts/buttons/button-more.html', {
-					"link": "./news.html",
-					"title": "Подробнее о компании",
-					})
-				</div>
+			</div>
+
+			<div class="news__btn">
+				@@include('./parts/buttons/button-more.html', {
+				"link": "./news.html",
+				"title": "Подробнее о компании",
+				})
 			</div>
 		</div>
 	</section>

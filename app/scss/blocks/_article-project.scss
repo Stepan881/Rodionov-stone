@@ -254,6 +254,19 @@
     .slick-current  {
       opacity: 1;
       transition: 0.3s;
+      position: relative;
+      &::after{
+        position: absolute;
+        top: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        border: 3px solid $accent;
+      }
+      &:focus,
+      &:active{
+        outline: none
+      }
     }
   }
 }

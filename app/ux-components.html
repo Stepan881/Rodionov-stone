@@ -2,258 +2,323 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Startup HTML template OptimizedHTML 5">
-  <link rel="icon" href="images/favicon.png">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+	<link rel="icon" href="images/favicon.png">
 
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
-  <meta property="og:image" content="images/dist/preview.jpg">
-  <link rel="stylesheet" href="css/main.min.css">
-  <title>UX</title>
+	<meta property="og:image" content="images/dist/preview.jpg">
+	<link rel="stylesheet" href="css/main.min.css">
+	<title>UI</title>
 </head>
-<style>
-  #UX {
-    background: silver;
-    position: relative;
-  }
 
-  #UX .header {
-    position: static;
-  }
+<body id="UI">
 
-  .break {
-    position: fixed;
-    top: 30px;
-    right: 100px;
-    z-index: 999;
-  }
+	<!-- Это пример того как вставлять новый блок
+		<div class="ui-block">
+			<h2 class="ui-block__title">ЗАГОЛОВОК БЛОКА</h2>
+			<hr>
+			<div class="ui-block__content">САМ БЛОК</div>
+		</div>
+	-->
 
-  .uxTitle {
-    margin: 50px 0 10px;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 48px;
-  }
+	<div class="ui-heder">
+		<div class="ui-heder-col logo">
+				<img src="images/Brandlif_Logo.svg" alt="">
+		</div>
+		<div class="ui-heder-col title">
+				OneUI Guideline
+		</div>
+		<div class="ui-heder-col">
+				<a class="ui-to-home" href="./index.html">Go home</a>
+		</div>
+	</div>
 
-  .br {
-    margin: 5px 0;
-  }
+	<main class="container">
 
-  #color {
-    display: flex;
-    flex-wrap: wrap;
-  }
+		<div class="ui-block">
+			<h2 class="ui-block__title">Color</h2>
+			<hr>
+			<div class="ui-block__content">
+				<div id="color">
+					<div class="color"></div>
+					<div class="color"></div>
+					<div class="color"></div>
+					<div class="color"></div>
+					<div class="color"></div>
+					<div class="color"></div>
+					<div class="color"></div>
+				</div>
+			</div>
+		</div>
 
-  .color {
-    margin: 5px;
-    border-radius: 5px;
-    border: 1px solid gold;
-    width: 250px;
-    height: 70px;
-    color: red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-weight: bold;
-  }
+		<div class="ui-block">
+			<h2 class="ui-block__title">Manrope</h2>
+			<hr>
+			<div class="ui-block__content">
+				
+			</div>
+		</div>
 
-  #card {
-    display: inline-flex;
-    flex-wrap: wrap;
-  }
+		<div class="ui-block">
+			<h2 class="ui-block__title">Typography</h2>
+			<hr>
+			<div class="ui-block__content">
+				
+			</div>
+		</div>
 
-  #card>* {
-    width: 30%;
-    margin: 0 1%;
-  }
-</style>
+		<div class="ui-block">
+			<h2 class="ui-block__title">Large Heading</h2>
+			<hr>
+			<div class="ui-block__content">
+				
+			</div>
+		</div>
 
-<body id="UX">
-  <main class="container">
-    <div class="break">
-      @@include('./parts/buttons/button-more.html', {
-      "title": "На Index.html",
-      "link": "./index.html",
-      })
-    </div>
+		<div class="ui-block">
+			<h2 class="ui-block__title">Body Text</h2>
+			<hr>
+			<div class="ui-block__content">
+				
+			</div>
+		</div>
 
+		<div class="ui-block">
+			<h2 class="ui-block__title">Buttons</h2>
+			<hr>
+			<div class="ui-block__content">
+				
+			</div>
+		</div>
 
-    <h2 class="uxTitle">Color</h2>
-    <div id="color">
+		<div class="ui-block">
+			<h2 class="ui-block__title">Modal</h2>
+			<hr>
+			<div class="ui-block__content">
+				
+			</div>
+		</div>
 
-      <div class="color" style="background: #F7F7F7">$bd-dark;<br>#F7F7F7;</div>
-      <div class="color" style="background: #373737;">$primary;<br>#373737;</div>
-      <div class="color" style="background: #7C7C7C;">$secondary;<br>#7C7C7C;</div>
-      <div class="color" style="background: #E2704C;">$accent;<br>#E2704C;</div>
-      <div class="color" style="background: #F6F6F6;">$light;<br>#F6F6F6;</div>
-      <div class="color" style="background: #ffffff;">$white;<br>#ffffff;</div>
-      <div class="color" style="background: #333333;">$bg-footer;<br>#333333;</div>
-    </div>
+		<div class="ui-block">
+			<h2 class="ui-block__title">Pagination</h2>
+			<hr>
+			<div class="ui-block__content">
+				
+			</div>
+		</div>
 
-    <h2 class="uxTitle">Manrope</h2>
-    <div id="Manrope">
+		<div class="ui-block">
+			<h2 class="ui-block__title">Card</h2>
+			<hr>
+			<div class="ui-block__content">
+				
+			</div>
+		</div>
 
-    </div>
+		<div class="ui-block">
+			<h2 class="ui-block__title">Icon Blocks</h2>
+			<hr>
+			<div class="ui-block__content">
+				
+			</div>
+		</div>
 
-    <h2 class="uxTitle">Typography</h2>
-    <div id="Typography">
+		<div class="ui-block">
+			<h2 class="ui-block__title">Sliders</h2>
+			<hr>
+			<div class="ui-block__content">
+				
+			</div>
+		</div>		
 
-    </div>
+		<div class="ui-block">
+			<h2 class="ui-block__title">Navigation</h2>
+			<hr>
+			<div class="ui-block__content">
+				
+			</div>
+		</div>		
 
-    <h2 class="uxTitle">Buttons</h2>
-    <div id="Buttons">
-      <div class="br">
-        @@include('./parts/buttons/button-more.html', {
-        "title": "Подробнее о компании",
-        "link": "#!",
-        })
-      </div>
-      <div class="br">
-        @@include('./parts/buttons/button-red.html', {
-        "title": "Instagram"
-        })
-      </div>
-      <div class="br">
-        @@include('./parts/buttons/button-transparent.html', {
-        "title": "Смотреть ещё"
-        })
-      </div>
-      <div class="br">
-        @@include('./parts/buttons/button-red-min.html', {
-        "title": "Подробнее",
-        })
-      </div>
+		<div class="ui-block">
+			<h2 class="ui-block__title">Footer</h2>
+			<hr>
+			<div class="ui-block__content">
+				
+			</div>
+		</div>		
 
-    </div>
+		<div class="ui-block">
+			<h2 class="ui-block__title">Form</h2>
+			<hr>
+			<div class="ui-block__content">
+				
+			</div>
+		</div>
 
-    <h2 class="uxTitle">Modal</h2>
-    <div id="Modal">
+		<h2 class="uiTitle">Manrope</h2>
+		<div id="Manrope">
 
-    </div>
+		</div>
 
-    <h2 class="uxTitle">Pagination</h2>
-    <div id="Pagination">
-      <div class="">
-        @@include('./parts/paginations/paginations.html', {
-        })
-      </div>
-    </div>
+		<h2 class="uiTitle">Typography</h2>
+		<div id="Typography">
 
-    <h2 class="uxTitle">Card</h2>
-    <div id="card">
-      <div class="">
-        @@include('./parts/cards/card-simple.html', {
-        "img": "./images/index/news1.jpg",
-        "img2": "./images/index/news1@2x.jpg 2x",
-        "time": "01.01.2020",
-        "title": "Рубрика 'Вопрос-Ответ'",
-        "text": "Продолжаем нашу рубрику «Вопрос-ответ». В этот раз ответим на ваши вопросы по утилизации мусора и расценок на коммунальные услуги."
-        })
-      </div>
-      <div class="">
-        @@include('./parts/cards/card-product.html', {
-        "img": "./images/index/news1.jpg",
-        "img2": "./images/index/news1@2x.jpg 2x",
-        "title": "BOON",
-        "rooms": "3 комнаты",
-        "home": "80 метров",
-        "plot": "6 соток",
-        "price": "от 6 500 000",
-        })
-      </div>
-      <div class="">
-        @@include('./parts/cards/card-info.html', {
-        "img": "./images/index/news1.jpg",
-        "img2": "./images/index/news1@2x.jpg 2x",
-        "title": "Монолитный фундамент",
-        "text": "Это цельный элемент, состоящий из прочного железного каркаса, и бетонного тела. На сегодняшний день такой фундамент является наиболее крепким, долговечным видом основания, с высокой несущей способностью!",
-        })
-      </div>
-    </div>
+		</div>
 
-    <h2 class="uxTitle">Icon</h2>
-    <div id="Icon">
-      <div class="benefits__wrapper row">
-        @@include('./parts/icon-block/advantages-col-3.html', {
-        "img": "./images/joy/advantages1.svg",
-        "title":"Собственный участок",
-        "text":"Территория облагорожена и благоустроена",
-        })
-        @@include('./parts/icon-block/advantages-col-3.html', {
-        "img": "./images/joy/advantages2.svg",
-        "title":"Чистовая отделка",
-        "text":"Коттеджи сразу готовы к ремонту",
-        })
-        @@include('./parts/icon-block/advantages-col-3.html', {
-        "img": "./images/joy/advantages3.svg",
-        "title":"Коммуникации",
-        "text":"одведены (газ, электричество, водоснабжение)",
-        })
-        @@include('./parts/icon-block/advantages-col-3.html', {
-        "img": "./images/joy/advantages4.svg",
-        "title":"Развитая инфраструктура",
-        "text":"Рядом магазины, больница, учебные заведения",
-        })
-        @@include('./parts/icon-block/advantages-col-3.html', {
-        "img": "./images/joy/advantages5.svg",
-        "title":"Экологически чистый район",
-        "text":"На территории комлекса современный ФОК, тротуары и уличное освещение",
-        })
-        @@include('./parts/icon-block/advantages-col-3.html', {
-        "img": "./images/joy/advantages6.svg",
-        "title":"Доступные цены",
-        "text":"Комфортабельный коттедж по цене 2 комнатной квартиры",
-        })
-      </div>
-    </div>
+		<h2 class="uiTitle">Buttons</h2>
+		<div id="Buttons">
+			<div class="br">
+				@@include('./parts/buttons/button-more.html', {
+				"title": "Подробнее о компании",
+				"link": "#!",
+				})
+			</div>
+			<div class="br">
+				@@include('./parts/buttons/button-red.html', {
+				"title": "Instagram"
+				})
+			</div>
+			<div class="br">
+				@@include('./parts/buttons/button-transparent.html', {
+				"title": "Смотреть ещё"
+				})
+			</div>
+			<div class="br">
+				@@include('./parts/buttons/button-red-min.html', {
+				"title": "Подробнее",
+				})
+			</div>
 
-    <h2 class="uxTitle">Form</h2>
-    <div class="container" id="Form">
+		</div>
 
-    </div>
+		<h2 class="uiTitle">Modal</h2>
+		<div id="Modal">
 
-    <h2 class="uxTitle">Sliders</h2>
-    <div class="container" id="Sliders">
-      <div class="">
-        @@include('./parts/sliders/sliders-gallery.html')
-      </div>
-      <div class="">
-        @@include('./parts/sliders/sliders-reviews.html')
-      </div>
-      <div class="documentation">
-        <div class="documentation__container">
-          @@include('./parts/sliders/sliders-documentation.html')
-        </div>
-      </div>
-    </div>
-  </main>
-  <div class="container">
-    <h2 class="uxTitle">Navigation</h2>
-  </div>
+		</div>
 
-  <div id="Navigation">
-    <div class="br">
-      @@include('./parts/header.html', {
-      "header-white": "header__white"
-      })
-    </div>
-    <div class="br">
-      @@include('./parts/header.html', {
-      "header-white": ""
-      })
-    </div>
-  </div>
-  <div class="container">
-    <h2 class="uxTitle">Footer</h2>
-  </div>
+		<h2 class="uiTitle">Pagination</h2>
+		<div id="Pagination">
+			<div class="">
+				@@include('./parts/paginations/paginations.html', {
+				})
+			</div>
+		</div>
 
-  <div id="Footer">
-    @@include('./parts/footer.html')
-  </div>
+		<h2 class="uiTitle">Card</h2>
+		<div id="card">
+			<div class="">
+				@@include('./parts/cards/card-simple.html', {
+				"img": "./images/index/news1.jpg",
+				"img2": "./images/index/news1@2x.jpg 2x",
+				"time": "01.01.2020",
+				"title": "Рубрика 'Вопрос-Ответ'",
+				"text": "Продолжаем нашу рубрику «Вопрос-ответ». В этот раз ответим на ваши вопросы по утилизации мусора и расценок на коммунальные услуги."
+				})
+			</div>
+			<div class="">
+				@@include('./parts/cards/card-product.html', {
+				"img": "./images/index/news1.jpg",
+				"img2": "./images/index/news1@2x.jpg 2x",
+				"title": "BOON",
+				"rooms": "3 комнаты",
+				"home": "80 метров",
+				"plot": "6 соток",
+				"price": "от 6 500 000",
+				})
+			</div>
+			<div class="">
+				@@include('./parts/cards/card-info.html', {
+				"img": "./images/index/news1.jpg",
+				"img2": "./images/index/news1@2x.jpg 2x",
+				"title": "Монолитный фундамент",
+				"text": "Это цельный элемент, состоящий из прочного железного каркаса, и бетонного тела. На сегодняшний день такой фундамент является наиболее крепким, долговечным видом основания, с высокой несущей способностью!",
+				})
+			</div>
+		</div>
+
+		<h2 class="uiTitle">Icon</h2>
+		<div id="Icon">
+			<div class="benefits__wrapper row">
+				@@include('./parts/icon-block/advantages-col-3.html', {
+				"img": "./images/joy/advantages1.svg",
+				"title":"Собственный участок",
+				"text":"Территория облагорожена и благоустроена",
+				})
+				@@include('./parts/icon-block/advantages-col-3.html', {
+				"img": "./images/joy/advantages2.svg",
+				"title":"Чистовая отделка",
+				"text":"Коттеджи сразу готовы к ремонту",
+				})
+				@@include('./parts/icon-block/advantages-col-3.html', {
+				"img": "./images/joy/advantages3.svg",
+				"title":"Коммуникации",
+				"text":"одведены (газ, электричество, водоснабжение)",
+				})
+				@@include('./parts/icon-block/advantages-col-3.html', {
+				"img": "./images/joy/advantages4.svg",
+				"title":"Развитая инфраструктура",
+				"text":"Рядом магазины, больница, учебные заведения",
+				})
+				@@include('./parts/icon-block/advantages-col-3.html', {
+				"img": "./images/joy/advantages5.svg",
+				"title":"Экологически чистый район",
+				"text":"На территории комлекса современный ФОК, тротуары и уличное освещение",
+				})
+				@@include('./parts/icon-block/advantages-col-3.html', {
+				"img": "./images/joy/advantages6.svg",
+				"title":"Доступные цены",
+				"text":"Комфортабельный коттедж по цене 2 комнатной квартиры",
+				})
+			</div>
+		</div>
+
+		<h2 class="uiTitle">Form</h2>
+		<div class="container" id="Form">
+
+		</div>
+
+		<h2 class="uiTitle">Sliders</h2>
+		<div class="container" id="Sliders">
+			<div class="">
+				@@include('./parts/sliders/sliders-gallery.html')
+			</div>
+			<div class="">
+				@@include('./parts/sliders/sliders-reviews.html')
+			</div>
+			<div class="documentation">
+				<div class="documentation__container">
+					@@include('./parts/sliders/sliders-documentation.html')
+				</div>
+			</div>
+		</div>
+	</main>
+	<div class="container">
+		<h2 class="uiTitle">Navigation</h2>
+	</div>
+
+	<div id="Navigation">
+		<div class="br">
+			@@include('./parts/header.html', {
+			"header-white": "header__white"
+			})
+		</div>
+		<div class="br">
+			@@include('./parts/header.html', {
+			"header-white": ""
+			})
+		</div>
+	</div>
+	<div class="container">
+		<h2 class="uiTitle">Footer</h2>
+	</div>
+
+	<div id="Footer">
+		@@include('./parts/footer.html')
+	</div>
 
 
 </body>

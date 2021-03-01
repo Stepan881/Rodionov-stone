@@ -1,10 +1,10 @@
 .partners {
 
   &__title {
-    margin-top: 97px;
+    margin-top: 100px;
 
     @media (max-width: $md) {
-      margin-top: 100px;
+      margin-top: 80px;
     }
   }
 
@@ -19,14 +19,14 @@
   }
 
   &__wrapper {
-    height: 103px;
+/*    height: 103px;
     width: 25%;
     padding: 13px 34px;
-    margin-bottom: 25px;
+    margin-bottom: 25px;*/
 
     @media (max-width: $md) {
-      width: 50%;
-      margin-bottom: 10px;
+/*      width: 50%;
+      margin-bottom: 10px;*/
     }
   }
 

@@ -58,32 +58,22 @@
   }
 
   .card-advantages {
-    width: 25%;
+    position: relative;
+
+    &::after{
+      position: absolute;
+      content: '';
+      width: calc(100% - 30px);
+      border-top: 2px solid #E2704C;
+      top: 0;
+    }
 
     @media (max-width: $lg) {
-      width: 45%;
       margin-top: 32px;
     }
 
-    @media (max-width: $sm) {
-      width: 100%;
-      max-width: 250px;
-    }
-
-    border-top: 2px solid #E2704C;
-
-    &:not(:last-child) {
-      width: calc(25% - 30px);
-
-      @media (max-width: $lg) {
-        width: 45%;
-        margin-top: 32px;
-      }
-
-      @media (max-width: $sm) {
-        width: 100%;
-        max-width: 250px;
-      }
+    @media (max-width: $md) {
+      max-width: 80%;
     }
 
     &__text {
@@ -120,7 +110,7 @@
   }
 
   &__card {
-    margin-bottom: 60px;
+    padding-bottom: 60px;
 
 
     .advantages__header {
@@ -136,7 +126,7 @@
     }
 
     @media (max-width: $md) {
-      margin-bottom: 16px;
+      padding-bottom: 40px;
     }
 
   }

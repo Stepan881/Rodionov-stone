@@ -10,22 +10,6 @@
 
   &__wrapper {
     margin-top: 52px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    &>* {
-      width: 30%;
-      margin: 0 1.5% 30px;
-
-      @media (max-width: $lg) { 
-        width: 47%;
-      }
-      @media (max-width: $md) { 
-        width: 100%;
-        margin: 0 0 30px;
-      }
-    }
   }
 
   &__btn {

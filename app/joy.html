@@ -6,7 +6,7 @@
 })
 
 <main>
-  <section class="project joy col">
+  <section class="project joy">
     <picture class="project__bg">
       <img class="project__image" src="./images/joy/firstScreen.jpg" srcset="./images/joy/firstScreen@2x.jpg 2x"
         alt="ДЖОЙ">
@@ -21,8 +21,10 @@
         "link": "./article-project.html",
         })
       </div>
-
     </div>
+  </section>
+
+  <section class="project-desc">
     <div class="container">
       <div class="project__bottom">
         <p class="project__content">Подарить себе комфорт загородной жизни можно уже сейчас!
@@ -35,7 +37,6 @@
         <p class="project__content">«Regera group» - ориентирована на комфорт и безопасность людей.</p>
       </div>
     </div>
-
   </section>
 
   <section class="benefits">
@@ -93,6 +94,36 @@
     <div class="container">
       <h2 class="benefits__title title-big">Расположение</h2>
       <div class="benefits__wrapper row">
+        @@include('./parts/icon-block/advantages-col-3.html', {
+        "img": "./images/joy/location1.svg",
+        "title":"20 минут до центра",
+        "text":"У каждого коттеджа своя дорога на выезд. До центра города около 15 км по комфортному шоссе",
+        })
+        @@include('./parts/icon-block/advantages-col-3.html', {
+        "img": "./images/joy/location2.svg",
+        "title":"Транспортные остановки",
+        "text":"Не подалеку от поселка курсируют 3 маршрута общественного транспорта",
+        })
+        @@include('./parts/icon-block/advantages-col-3.html', {
+        "img": "./images/joy/location3.svg",
+        "title":"Экологически чистый район",
+        "text":"В дали от многоэтажек и шумных пыльных дорог",
+        })
+        @@include('./parts/icon-block/advantages-col-3.html', {
+        "img": "./images/joy/location1.svg",
+        "title":"20 минут до центра",
+        "text":"У каждого коттеджа своя дорога на выезд. До центра города около 15 км по комфортному шоссе",
+        })
+        @@include('./parts/icon-block/advantages-col-3.html', {
+        "img": "./images/joy/location2.svg",
+        "title":"Транспортные остановки",
+        "text":"Не подалеку от поселка курсируют 3 маршрута общественного транспорта",
+        })
+        @@include('./parts/icon-block/advantages-col-3.html', {
+        "img": "./images/joy/location3.svg",
+        "title":"Экологически чистый район",
+        "text":"В дали от многоэтажек и шумных пыльных дорог",
+        })
         @@include('./parts/icon-block/advantages-col-3.html', {
         "img": "./images/joy/location1.svg",
         "title":"20 минут до центра",
@@ -225,8 +256,7 @@
       <div class="col">
         <h2 class="news__title title">При строительстве мы используем только качественные материалы надёжных брендов
         </h2>
-        <div class="row">
-          <div class="news__wrapper">
+        <div class="row news__wrapper">
             @@include('./parts/cards/card-info.html', {
             "img": "./images/joy/construction1.jpg",
             "img2": "./images/joy/construction1@2x.jpg 2x",
@@ -245,9 +275,24 @@
             "title": "Окна из 5 -камерного профиля",
             "text": "Говоря о пятикамерном профиле, нужно четко понимать, что такое камера. В данном случае речь идет о пустых секциях, расположенных в конструкции окна. Воздух, находящийся внутри каждой камеры, препятствует проникновению холода внутрь помещения, а значит, тепло сохраняется гораздо эффективнее.",
             })
-
-          </div>
-
+            @@include('./parts/cards/card-info.html', {
+            "img": "./images/joy/construction1.jpg",
+            "img2": "./images/joy/construction1@2x.jpg 2x",
+            "title": "Монолитный фундамент",
+            "text": "Это цельный элемент, состоящий из прочного железного каркаса, и бетонного тела. На сегодняшний день такой фундамент является наиболее крепким, долговечным видом основания, с высокой несущей способностью!",
+            })
+            @@include('./parts/cards/card-info.html', {
+            "img": "./images/joy/construction2.jpg",
+            "img2": "./images/joy/construction2@2x.jpg 2x",
+            "title": "Стены из газосиликатного блока",
+            "text": "Это экологичный и легкий по весу материал. Жилье из него получается теплым и энергоэффективным, с хорошей звукоизоляцией.",
+            })
+            @@include('./parts/cards/card-info.html', {
+            "img": "./images/joy/construction3.jpg",
+            "img2": "./images/joy/construction3@2x.jpg 2x",
+            "title": "Окна из 5 -камерного профиля",
+            "text": "Говоря о пятикамерном профиле, нужно четко понимать, что такое камера. В данном случае речь идет о пустых секциях, расположенных в конструкции окна. Воздух, находящийся внутри каждой камеры, препятствует проникновению холода внутрь помещения, а значит, тепло сохраняется гораздо эффективнее.",
+            })
         </div>
       </div>
     </div>
@@ -265,7 +310,6 @@
 
     </div>
   </section>
-
 
   <section class="mortgage">
     <div class="container">
@@ -322,10 +366,10 @@
     </div>
   </section>
 
-    <section class="contact">
-        <h2 class="visually-hidden">Контакты</h2>
-        @@include('./template/contact.html')
-    </section>
+  <section class="contact">
+      <h2 class="visually-hidden">Контакты</h2>
+      @@include('./template/contact.html')
+  </section>
 </main>
 
 @@include('./parts/footer.html')
