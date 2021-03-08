@@ -28,11 +28,8 @@
 	}
 }
 
-@include font('Manrope', normal, 700, '../fonts/Manrope-Bold.woff', '../fonts/Manrope-Bold.woff2');
-@include font('Manrope', normal, 400, '../fonts/Manrope-Regular.woff', '../fonts/Manrope-Regular.woff2');
-@include font('Manrope', normal, 300, '../fonts/Manrope-Light.woff', '../fonts/Manrope-Light.woff2');
-// @include font('Open Sans', normal, 400, '../fonts/OpenSans-Regular.woff', '../fonts/OpenSans-Regular.woff2');
-// @include font('PT Root UI', normal, 400, '../fonts/PTRootUI-Regular.woff', '../fonts/PTRootUI-Regular.woff2');
+@include font('Open Sans', normal, 400, '../fonts/OpenSans-Regular.woff', '../fonts/OpenSans-Regular.woff2');
+@include font('Open Sans', normal, 700, '../fonts/OpenSans-Bold.woff', '../fonts/OpenSans-Bold.woff2');
 
 
 // GENERAL DOCUMENT STYLES
@@ -53,8 +50,13 @@ input,textarea {
 	&:required:valid {
 		border-color: green;
 	}
-}*/
+}
 
+@media (max-width: $md) {
+
+}
+
+*/
 $maxWidth: 1440;
 $xs: 0;
 $sm: 576px;
@@ -78,7 +80,7 @@ html {
 }
 
 body {
-	font-family: 'Manrope';
+	font-family: 'Open Sans';
 	font-size: 16px;
 	color: $primary;
 	min-width: 320px;
@@ -98,8 +100,32 @@ body {
 	overflow: hidden;
 }
 
-#about .advantages {
-	background-color: $white;
+.title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 48px;
+  position: relative;
+  display: inline-flex;
+
+  &::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 40px;
+    display: inline-flex;
+    background: #C1A477;
+    left: calc(100% + 16px);
+    top: 50%;
+  }
+
+
+  @media (max-width: $md) {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
 }
 
 a {
@@ -133,46 +159,43 @@ button {
 	border: none;
 }
 
-.flex-col-wrap {
-	display: flex;
-	flex-direction: column;
-	margin: 0;
-	padding: 0;
+.button {
+
+
+
+
+
+
 }
 
-.flex-row-wrap {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	margin: 0;
-	padding: 0;
+.link {
+  padding: 12px 20px;
+  background: transparent;
+  color: #2A2A28;
+  border: 1px solid #2A2A28;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  min-width: 191px;
+  transition: 0.3s;
+
+  &:hover {
+    border: 1px solid #C1A477;
+    color: #2A2A28;
+  }
+
+  @media (max-width: $lg) {
+    width: 100%;
+    margin: 5px 0;
+  }
 }
 
-.title {
-	font-weight: 300;
-	font-size: 24px;
-	line-height: 40px;
-
-	&-big {
-		font-weight: 300;
-		font-size: 30px;
-		line-height: 40px;
-	}
-}
-
-.heading {
-	padding: 164px 0 25px;
-	font-weight: 300;
-	font-size: 24px;
-	line-height: 40px;
-}
-
-.contact-bg-dark {
-	.contact {
-		background: $bd-dark;
-
-		@media (max-width: $md) { 
-			background: $white;
-		}
-	}	
+.container-padding {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	@media (max-width: $lg) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+  }
 }

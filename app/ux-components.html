@@ -147,7 +147,7 @@
 			<h2 class="ui-block__title">Footer</h2>
 			<hr>
 			<div class="ui-block__content">
-				
+				@@include('./parts/footer.html')
 			</div>
 		</div>		
 
@@ -155,7 +155,17 @@
 			<h2 class="ui-block__title">Form</h2>
 			<hr>
 			<div class="ui-block__content">
-				
+				<div class="form">
+					@@include('./parts/form/form.html', {
+						"class": "form",
+					})
+				</div>
+
+				<div class="form form__white">
+					@@include('./parts/form/form.html', {
+						"class": "form form__white",
+					})
+				</div>
 			</div>
 		</div>
 
@@ -172,24 +182,21 @@
 		<h2 class="uiTitle">Buttons</h2>
 		<div id="Buttons">
 			<div class="br">
-				@@include('./parts/buttons/button-more.html', {
-				"title": "Подробнее о компании",
-				"link": "#!",
-				})
-			</div>
-			<div class="br">
-				@@include('./parts/buttons/button-red.html', {
-				"title": "Instagram"
+				@@include('./parts/buttons/button-gold.html', {
+					"title": "Рассчитать стоимость",
+					"link": "#",
 				})
 			</div>
 			<div class="br">
 				@@include('./parts/buttons/button-transparent.html', {
-				"title": "Смотреть ещё"
+					"title": "Рассчитать стоимость",
+					"link": "#",
 				})
 			</div>
 			<div class="br">
-				@@include('./parts/buttons/button-red-min.html', {
-				"title": "Подробнее",
+				@@include('./parts/buttons/button-more.html', {
+					"title": "Рассчитать стоимость",
+					"link": "#",
 				})
 			</div>
 

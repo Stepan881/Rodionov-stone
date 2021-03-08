@@ -6,109 +6,26 @@
 // // Import vendor jQuery plugin example (not module)
 // require('~/app/libs/mmenu/dist/mmenu.js')
 
+
+
 document.addEventListener('DOMContentLoaded', () => {
-	$(".slider").each(function (index) {
-		$('.slider-photos:not(.slider-documentation)', $(this)).slick({
 
-			adaptiveHeight: true,
-			dots: true,
-			appendArrows: 'pagination',
-			lazyLoad: 'ondemand',
-			prevArrow: $(this).find('.prew'),
-			nextArrow: $(this).find('.next'),
-			dotsClass: 'boolets',
-			customPaging: function (slider, i) {
-				return '<span class="boolets-dot"></span>';
-			},
-		});
-
-
-		$('.slider-documentation', $(this)).slick({
-			speed: 300,
-			slidesToShow: 3,
-			slidesToScroll: 3,
-			adaptiveHeight: true,
-			dots: true,
-			appendArrows: 'pagination',
-			lazyLoad: 'ondemand',
-			prevArrow: $(this).find('.prew'),
-			nextArrow: $(this).find('.next'),
-			dotsClass: 'boolets',
-			customPaging: function (slider, i) {
-				return '<span class="boolets-dot"></span>';
-			},
-			responsive: [{
-					breakpoint: 1024,
-					settings: {
-						slidesToShow: 2,
-						slidesToScroll: 2,
-						infinite: true,
-						dots: true
-					}
-				},
-				{
-					breakpoint: 480,
-					settings: {
-						slidesToShow: 1,
-						slidesToScroll: 1
-					}
-				}
-			]
-		});
+	const heade = document.querySelector(`.header`);
+	const navBtn = document.querySelector(`.nav-open-btn`);
+	window.addEventListener(`resize`, () => {
+		if (window.innerWidth < 992) {
+			heade.classList.remove(`header-nav-open`);
+		}
 	});
 
-	function sliderProject() {
-		$('#slide-priject-big').slick({
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			arrows: false,
-			dots: false,
-			fade: true,
-			asNavFor: '#slide-priject-min'
-		});
-		$('#slide-priject-min').slick({
-			infinite: true,
-			variableWidth: true,
-			swipeToSlide: true,
-			asNavFor: '#slide-priject-big',
-			arrows: false,
-			dots: false,
-			focusOnSelect: true,
-			slidesToShow: 6,
-			slidesToScroll: 6,
-			responsive: [{
-					breakpoint: 1200,
-					settings: {
-						slidesToShow: 5,
-						slidesToScroll: 5,
-					}
-				},
-				{
-					breakpoint: 992,
-					settings: {
-						variableWidth: false,
-						slidesToShow: 3,
-						slidesToScroll: 3,
-					}
-				},
-				{
-					breakpoint: 768,
-					settings: {
-						slidesToShow: 3,
-						slidesToScroll: 3,
-					}
-				},
-				{
-					breakpoint: 576,
-					settings: {
-						slidesToShow: 2,
-						slidesToScroll: 2,
-					}
-				},
-			]
-		});
-	}
-	sliderProject();
+	navBtn.addEventListener(`click`, (evt) => {
+		evt.preventDefault();
+		if (window.innerWidth < 992) {
+			heade.classList.toggle(`header-nav-open`);
+		}
+	});
+
+
 
 	function headerColor() {
 		function toggle() {
@@ -131,27 +48,17 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 	headerColor();
 
-	// отзрыть закрыть меню
-	function navMenu() {
-		let header = document.querySelector('.header');
-		let btn = document.querySelector('.js-open-nav');
-		let menu = document.querySelector('.js-nav-menu');
-		let overlay = document.querySelector('.js-nav-overlay');
-
-		btn.addEventListener('click', function () {
-			this.classList.toggle('header__open');
-			menu.classList.toggle('nav--open');
-			header.classList.toggle('open-menu')
+	function accordion() {
+		const questions = document.querySelector(`.js-questions`);
+		if (!questions) return;
+		questions.addEventListener(`click`, (evt) => {
+			if (evt.target.matches(`.questions__link`)) {
+				evt.preventDefault();
+				evt.target.classList.toggle(`questions__link--open`);
+			}
 		});
-
-		overlay.addEventListener('click', function (evt) {
-			btn.classList.remove('header__open');
-			menu.classList.remove('nav--open');
-			header.classList.remove('open-menu');
-		});
-	};
-
-	navMenu();
+	}
+	accordion();
 
 	// открыть форму
 	function openForm() {
@@ -234,7 +141,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 	openForm();
 
-
 	function heightHeader() {
 		window.addEventListener("resize", () => {
 			resize();
@@ -250,5 +156,4 @@ document.addEventListener('DOMContentLoaded', () => {
 		resize();
 	}
 	heightHeader();
-
 });

@@ -1,0 +1,27 @@
+@@include('./head.html', {
+"title": "Главная"
+})
+
+@@include('./parts/header.html', {
+"header-white": ""
+})
+
+<main class="height-header">
+	@@include('./parts/map.html')
+
+
+	<section class="form form__white">
+		<div class="container container-padding">
+			<div class="form__title-wrapper">
+				<h2 class="form__title">Оставить заявку</h2>
+			</div>
+			@@include('./parts/form/form.html', {
+				"class": "form form__white",
+			})
+		</div>
+	</section>
+
+
+</main>
+
+@@include('./parts/footer.html')
