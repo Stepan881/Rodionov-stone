@@ -1,0 +1,62 @@
+.franchise-causes {
+  background: $bg;
+  
+
+
+  &__container {
+    margin-top: 60px;
+  }
+
+  &__item {
+    text-align: center;
+
+    @media (max-width: $lg) { 
+      display: flex;
+      text-align: left;
+      align-items: center;
+      margin-bottom: 32px;
+    }
+  }
+  
+
+  &__icon {
+    width: 84px;
+    height: 84px;
+    margin: 0 auto;
+
+    @media (max-width: $lg) { 
+      margin: 0;
+      width: 71px;
+      height: 71px;
+    }
+  }
+
+
+  &__wrapper-content {
+    max-width: 195px;
+    margin: 16px auto 0;
+    @media (max-width: $lg) { 
+      margin: 0 0 0 20px;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+
+
+  }
+
+  
+  &__text {
+    margin: 8px auto 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    @media (max-width: $lg) { 
+      margin: 4px 0 0 0;
+    }
+  }
+
+}

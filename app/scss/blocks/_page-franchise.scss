@@ -1,0 +1,72 @@
+.page-franchise {
+
+
+  &__wrapper {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  &__bg {
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  &__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1440px;
+    width: 100%;
+    padding-left: 150px;
+
+    @media (max-width: $lg) {
+      padding: 0 15px;
+    }
+  }
+
+  &__title {
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 48px;
+    color: $white;
+
+    @media (max-width: $lg) {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  &__text {
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 62px;
+    color: $white;
+    margin-top: 40px;
+    max-width: 638px;
+    word-wrap: break-word;
+
+    @media (max-width: $lg) {
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 56px;
+    }
+  }
+
+  .catalog {
+    margin-top: 80px;
+    padding-bottom: 60px;
+    .content {
+      order: -1;
+      margin-bottom: 58px;
+    }
+  }
+
+  .item {
+    align-items: center;
+    padding: 25px 0;
+  }
+
+}

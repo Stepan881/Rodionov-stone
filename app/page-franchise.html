@@ -1,0 +1,98 @@
+@@include('./parts/head.html', {
+"title": "Франшиза",
+})
+@@include('./parts/header.html', {
+"header-white": "",
+})
+
+<main>
+  <section class="page-franchise">
+    <div class="page-franchise__wrapper">
+      <img class="page-franchise__bg" src="./images/franchise/franchise.jpg" srcset="./images/franchise/franchise@2x.jpg 2x" alt="">
+
+      <div class="page-franchise__container">
+        <h1 class="title page-franchise__title">Франшиза</h1>
+        <p class="page-franchise__text">
+          Уникальный бизнес под ключ
+        </p>
+      </div>
+    </div>
+
+    <div class="catalog">
+      <div class="container">
+        <article class="item row">
+          <div class="content col-md-12 col-lg-5">
+            <p class="text">Уникальностью производства является выпиливание ЦЕЛЬНЫХ "Г"
+              и "П"-образных форм, которые, в сочетание с термообработкой или шлифовкой, придают визуальный эффект обрезанного цельного камня (монолита). Данная разработка не имеет аналогов, запатентована и является новшеством в камнеобработке. Помимо прямых продаж гранитного материала, специалисты фирмы осуществляют выезды на объекты для замеров и консультаций, оказывают помощь в разработке дизайна и бесплатно обучают новому способу укладки Ваших специалистов. Многолетний опыт работы, честность и открытость - основа надежных доверительных отношений со своими клиентами.</p>
+          </div>
+          <div class="col-md-12 col-lg-7">
+            <div class="image-wrapper">
+              <img class="image" src="./images/catalog/catalog1.jpg" srcset="./images/catalog/catalog1@2x.jpg 2x" alt="@@title">
+            </div>
+          </div>
+        </article>
+
+        <article class="item row">
+          <div class="content col-md-12 col-lg-5">
+            <p class="text">Уникальностью производства является выпиливание ЦЕЛЬНЫХ "Г"
+              и "П"-образных форм, которые, в сочетание с термообработкой или шлифовкой, придают визуальный эффект обрезанного цельного камня (монолита). Данная разработка не имеет аналогов, запатентована и является новшеством в камнеобработке. Помимо прямых продаж гранитного материала, специалисты фирмы осуществляют выезды на объекты для замеров и консультаций, оказывают помощь в разработке дизайна и бесплатно обучают новому способу укладки Ваших специалистов. Многолетний опыт работы, честность и открытость - основа надежных доверительных отношений со своими клиентами.</p>
+          </div>
+          <div class="col-md-12 col-lg-7">
+            <div class="image-wrapper">
+              <img class="image" src="./images/catalog/catalog1.jpg" srcset="./images/catalog/catalog1@2x.jpg 2x" alt="@@title">
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="franchise-causes">
+    <div class="container container-padding">
+      <h2 class="title">4 причины выбрать франшизу Родионов камень</h2>
+      <div class="franchise-causes__container row row-cols-1 row-cols-lg-4">
+        <div class="franchise-causes__item">
+          <img class="franchise-causes__icon" src="./images/ok.svg" alt="Сервис">
+          <div class="franchise-causes__wrapper-content">
+            <div class="franchise-causes__title">Сервис</div>
+            <p class="franchise-causes__text">Консультации
+              в режиме online</p>
+          </div>
+        </div>
+
+        <div class="franchise-causes__item">
+          <img class="franchise-causes__icon" src="./images/ok.svg" alt="Пожизненная гарантия">
+          <div class="franchise-causes__wrapper-content">
+            <div class="franchise-causes__title">Пожизненная гарантия</div>
+            <p class="franchise-causes__text">Мы гарантируем службу изделия минимум 5 лет каждому клиенту</p>
+          </div>
+        </div>
+
+        <div class="franchise-causes__item">
+          <img class="franchise-causes__icon" src="./images/ok.svg" alt="Производство">
+          <div class="franchise-causes__wrapper-content">
+            <div class="franchise-causes__title">Производство</div>
+            <p class="franchise-causes__text">Свой современный парк оборудования</p>
+          </div>
+        </div>
+        <div class="franchise-causes__item">
+          <img class="franchise-causes__icon" src="./images/ok.svg" alt="Замер без проблем">
+          <div class="franchise-causes__wrapper-content">
+            <div class="franchise-causes__title">Замер без проблем</div>
+            <p class="franchise-causes__text">Выезд замерщика с образцами
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- form form__silver form__white -->
+  @@include('./parts/form-wrapper.html', {
+  "class": "form form__white",
+  })
+
+</main>
+
+@@include('./parts/footer.html')
