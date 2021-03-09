@@ -1,0 +1,79 @@
+@@include('./parts/head.html', {
+"title": "Дорожка из балтийского валуна",
+})
+@@include('./parts/header.html', {
+"header-white": "",
+})
+
+<main class="height-header">
+
+  <article class="page-work-article article">
+    <div class="container container-padding">
+      <h1 class="article__title">Дорожка из балтийского валуна</h1>
+      <p class="article__sub-title">Беседки из камня - это один из самых необыкновенных вариантов исполнения, которые существуют на сегодняшний день.</p>
+      <div class="article__slider">
+        <div class="article__slider-wrapper">
+          <div class="article__slide">
+            <img class="article__image" src="./images/slider-index/slide1.jpg" srcset="./images/slider-index/slide1@2x.png 2x" alt="Граним гранит">
+					
+          </div>
+           <!--  -->
+        </div>
+        <div class="article__arrow"></div>
+        <div class="article__pagination">
+          <img class="article__pagination-img" src="./images/slider-index/slide1.jpg" srcset="./images/slider-index/slide1@2x.png 2x" alt="Граним гранит">
+          <img class="article__pagination-img" src="./images/slider-index/slide1.jpg" srcset="./images/slider-index/slide1@2x.png 2x" alt="Граним гранит">
+          <img class="article__pagination-img" src="./images/slider-index/slide1.jpg" srcset="./images/slider-index/slide1@2x.png 2x" alt="Граним гранит">
+          <img class="article__pagination-img" src="./images/slider-index/slide1.jpg" srcset="./images/slider-index/slide1@2x.png 2x" alt="Граним гранит">
+
+        </div>
+        <div class="slider__boolets">
+          <span class="slider__dot"></span>
+          <span class="slider__dot slider__dot--active"></span>
+          <span class="slider__dot"></span>
+          <span class="slider__dot"></span>
+        </div>
+      </div>
+      <div class="article__content row row-cols-1 row-cols-lg-2">
+        <p class="article__text">Беседки из камня - это один из самых необыкновенных вариантов исполнения, которые существуют на сегодняшний день. Такие виды беседок как нельзя лучше вписывается абсолютно в любой ландшафт и самое главное - данный вариант исполнения является одним из самых надежных среди других вариантов. Компания "Стиль в камне" уже на протяжении многих лет занимается обработкой по уникальным технологиям и реализацией балтийского камня (гранита), а также производством из него изделий для интерьера и ландшафтного дизайна. Беседки из натурального камня от компании S&S Компания “Стиль в камне” осуществляет выпиливание из балтийского гранита Г и П-образных форм, которые затем обрабатывают термически и шлифуют. В результате этого получается уникальный строительный материал с визуальным эффектом обрезанного монолита. Такой материал широко применяется для отделки домов, в ландшафтном дизайне, при создании малых архитектурных форм. Кроме этого, компания является одним из лидеров в данной области рынка и имеет большое количество положительных отзывов.</p>
+        <p class="article__text">Посмотреть на пример работ можно на сайте компании “Стиль в камне”. там же можно ознакомиться с ассортиментом продукции и условиями сотрудничества. Беседка является одним из важнейших элементов оформления загородных участков, садов, парков, придомовых территорий. Они выполняют сразу несколько функций: декоративная, защита от непогоды, место проведения совместного досуга, может быть летней кухней или мангальной площадкой. местом отдыха членов семьи и так далее. Поэтому к их постройке нужно относиться с максимальной ответственностью и профессионализмом. Здесь важно учитывать практически все, начиная от основного назначения беседки, ее формы, дизайна, выбора материала, а также окружающего ландшафта. Очень важное значение придается строительному материалу, из которого будет построена беседка. Среди всего разнообразия строительных материалов, наиболее востребованными традиционно являются дерево и натуральный камень. </p>
+      </div>
+    </div>
+
+    <div class="catalog">
+      <div class="container">
+        <div class="item row">
+          <span class="catalog__header monile-none">Для данной работы использовался <span class="catalog__gold">балтийский валун</span> </span>
+          <div class="content col-md-12 col-lg-5">
+            <h2 class="catalog__header desctop-none">Для данной работы использовался <span class="catalog__gold">балтийский валун</span> </h2>
+            <p class="text-header">Описание</p>
+            <p class="text">Элемент находит применение в укладке и даёт эффект целостности, массивности и монолита. Элемент находит применение в укладке и даёт эффект целостности, массивности и монолита.</p>
+            <div class="button-container">
+              @@include('./parts/buttons/button-more.html', {
+              "title": "Подробнее о камне",
+              "link": "#",
+              })
+    
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-7">
+            <div class="image-wrapper">
+              <img class="image" src="./images/catalog/catalog1.jpg" srcset="./images/catalog/catalog1@2x.jpg" alt="балтийский валун">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+  </article>
+
+  <!-- form form__silver form__white -->
+  @@include('./parts/form-wrapper.html', {
+  "class": "form form__white",
+  })
+
+</main>
+
+@@include('./parts/footer.html')

@@ -1,0 +1,78 @@
+@@include('./parts/head.html', {
+"title": "Дизайнерам",
+})
+@@include('./parts/header.html', {
+"header-white": "",
+})
+
+<main class="height-header">
+  <h1 class="visually-hidden">Изделия из камня для любого интерьера</h1>
+
+  <section class="page-designers page-catalog">
+    <div class="container container-padding">
+      <div class="page-designers__wrapper-title">
+        <span class="title">Дизайнерам</span>
+        <h2 class="page-designers__header">
+          Изделия из камня для любого интерьера
+        </h2>
+        <div class="page-catalog__link">
+          <a class="page-catalog__download" href="#">Скачать прайс</a>
+        </div>
+
+      </div>
+
+      <div class="page-designers__wrapper">
+
+        <article class="page-designers__card">
+          <div class="page-designers__img-wrapper">
+            <img class="page-designers__image" src="./images/page-designers/article1.jpg" srcset="./images/page-designers/article1@2x.jpg 2x" alt="Уникальность">
+          </div>
+          <div class="page-designers__content">
+            <h3 class="page-designers__title">Уникальность</h3>
+            <p class="page-designers__text">Уникальностью производства является выпиливание ЦЕЛЬНЫХ "Г" и "П"-образных форм, которые, в сочетание с термообработкой или шлифовкой, придают визуальный эффект обрезанного цельного камня (монолита). Данная разработка не имеет аналогов, запатентована 
+              и является новшеством в камнеобработке.</p>
+          </div>
+        </article>
+
+        <article class="page-designers__card">
+          <div class="page-designers__img-wrapper">
+            <img class="page-designers__image" src="./images/page-designers/article2.jpg" srcset="./images/page-designers/article2@2x.jpg 2x" alt="Выезд на объекты">
+          </div>
+          <div class="page-designers__content">
+            <h3 class="page-designers__title">Выезд на объекты</h3>
+            <p class="page-designers__text"> Помимо прямых продаж гранитного материала, специалисты фирмы осуществляют выезды 
+              на объекты для замеров и консультаций, оказывают помощь в разработке дизайна 
+              и бесплатно обучают новому способу укладки Ваших специалистов. </p>
+          </div>
+        </article>
+
+        <article class="page-designers__card">
+          <div class="page-designers__img-wrapper">
+            <img class="page-designers__image" src="./images/page-designers/article3.jpg" srcset="./images/page-designers/article3@2x.jpg 2x" alt="Выезд на объекты">
+          </div>
+          <div class="page-designers__content">
+            <h3 class="page-designers__title">Выезд на объекты</h3>
+            <p class="page-designers__text"> Помимо прямых продаж гранитного материала, специалисты фирмы осуществляют выезды 
+              на объекты для замеров и консультаций, оказывают помощь в разработке дизайна 
+              и бесплатно обучают новому способу укладки Ваших специалистов. </p>
+          </div>
+        </article>
+
+      </div>
+      <div class="page-designers__btn-wrapper">
+        @@include('./parts/buttons/button-gold.html', {
+          "link": "#",
+          "title": "Рассчитать стоимость",
+        })
+      </div>
+    </div>
+  </section>
+
+  <!-- form form__silver form__white -->
+  @@include('./parts/form-wrapper.html', {
+    "class": "form form__silver",
+  })
+
+</main>
+
+@@include('./parts/footer.html')
