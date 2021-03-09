@@ -1,0 +1,90 @@
+.page-investors {
+
+  .container {
+    padding-bottom: 60px;
+  }
+
+  &__wrapper {
+    margin-top: 60px;
+    display: grid;
+    grid-template-areas:
+      "c i"
+      "b i";
+
+    @media (max-width: $lg) {
+      grid-template-areas:
+        "i"
+        "c"
+        "b";
+    }
+  }
+
+  &__info {
+    grid-area: i;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+
+      @media (max-width: $lg) {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    }
+
+    li {
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      width: 165px;
+      margin-right: 100px;
+
+      @media (max-width: $lg) {
+        margin-left: 0;
+        margin-right: 23px;
+      }
+
+      @media (max-width: $sm) {
+        width: 48%;
+
+        margin: 0 1%;
+      }
+    }
+  }
+
+  &__head {
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 64px;
+    color: $hover;
+    display: inline-flex;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #C1A477;
+    margin-bottom: 8px;
+  }
+
+  &__sub-head {
+    display: inline-flex;
+    margin-bottom: 60px;
+
+    @media (max-width: $sm) {
+      margin-bottom: 36px;
+    }
+  }
+
+  &__content-wrapper {
+    grid-area: c;
+  }
+
+  &__text {
+    max-width: 560px;
+  }
+
+  &__btn {
+    grid-area: b;
+
+    @media (max-width: $lg) {
+      margin-top: 45px;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+@@include('./parts/head.html', {
+"title": "Инвесторам",
+})
+@@include('./parts/header.html', {
+"header-white": "",
+})
+
+<main class="height-header page-investors">
+  <h1 class="visually-hidden">Зачем инвестировать в Родионов камень</h1>
+
+  <section class="page-designers page-catalog">
+    <div class="container container-padding">
+      <div class="page-designers__wrapper-title">
+        <span class="title">Инвесторам</span>
+        <h2 class="page-designers__header">
+          Зачем инвестировать в Родионов камень
+        </h2>
+      </div>
+
+      <div class="page-investors__wrapper">
+        <div class="page-investors__info">
+          <ul>
+            <li>
+              <p class="page-investors__head">120+</p>
+              <p class="page-investors__sub-head">Довольных клиентов</p>
+            </li>
+            <li>
+              <p class="page-investors__head">1000+</p>
+              <p class="page-investors__sub-head">Изготовлино изделий</p>
+            </li>
+            <li>
+              <p class="page-investors__head">120+</p>
+              <p class="page-investors__sub-head">Довольных клиентов</p>
+            </li>
+          </ul>
+        </div>
+        <div class="page-investors__content-wrapper">
+          <p class="page-investors__text">Уникальностью производства является выпиливание ЦЕЛЬНЫХ "Г"
+            и "П"-образных форм, которые, в сочетание с термообработкой или шлифовкой, придают визуальный эффект обрезанного цельного камня (монолита). Данная разработка не имеет аналогов,</p>
+          <p class="page-investors__text">запатентована и является новшеством в камнеобработке. Помимо прямых продаж гранитного материала, специалисты фирмы осуществляют выезды на объекты для замеров и консультаций, оказывают помощь в разработке дизайна и бесплатно обучают новому способу укладки Ваших специалистов. Многолетний опыт работы, честность и открытость - основа надежных доверительных отношений со своими клиентами.</p>
+          <p class="page-investors__text">Мы разработали уникальные технологии и производим этот, единственный в своем роде, строительный материал из натурального балтийского Камня (аналогов нет), продавая качество по действительно низким ценам,</p>
+        </div>
+        <div class="page-investors__btn">
+          @@include('./parts/buttons/button-gold.html', {
+          "link": "#",
+          "title": "Стать инвестором",
+          })
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <section class="catalog bg-dark">
+    <div class="container container-padding">
+      <h2 class="title">Каталог</h2>
+      <div class="catalog__wrapper">
+
+        @@include('./parts/cards/card-catalog.html', {
+        "link": "./page-catalog-article.html",
+        "title": "Балтийский (скандинавский) валун",
+        "text": "Элемент находит применение в укладке и даёт эффект целостности, массивности и монолита. Элемент находит применение в укладке и даёт эффект целостности, массивности и монолита.",
+        "url": "./images/catalog/catalog1.jpg",
+        "url2x": "./images/catalog/catalog1@2x.jpg",
+        })
+
+        @@include('./parts/cards/card-catalog.html', {
+        "link": "./page-catalog-article.html",
+        "title": "Цельный (не клееный) угловой элемент",
+        "text": "Элемент находит применение в укладке и даёт эффект целостности, массивности и монолита. Элемент находит применение в укладке и даёт эффект целостности, массивности и монолита.",
+        "url": "./images/catalog/catalog2.jpg",
+        "url2x": "./images/catalog/catalog2@2x.jpg",
+        })
+      </div>
+      <div class="d-flex justify-content-center">
+        @@include('./parts/buttons/button-more.html', {
+          "link": "#",
+          "title": "Смотреть весь каталог",
+          })
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- form form__silver form__white -->
+  @@include('./parts/form-wrapper.html', {
+  "class": "form form__white bg-white",
+  })
+
+</main>
+
+@@include('./parts/footer.html')

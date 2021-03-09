@@ -186,3 +186,19 @@ img {
 		padding-bottom: 60px;
   }
 }
+
+.bg-dark {
+	background-color: $bg;
+	@media (max-width: $lg) {
+		background-color: $white;
+  }
+}
+
+
+.bg-white {
+
+	background-color: $white;
+	@media (max-width: $lg) {
+		background-color: $bg;
+  }
+}
