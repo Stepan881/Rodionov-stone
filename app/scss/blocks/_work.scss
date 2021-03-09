@@ -1,0 +1,12 @@
+.work {
+  background: $bg;
+
+  &__wrapper {
+    padding: 60px 0;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+  }
+}
