@@ -3,6 +3,36 @@
   font-size: 14px;
   line-height: 22px;
 
+
+  .monile-none {
+    display: none;
+
+    @media (max-width: $lg) {
+      display: block;
+      margin-bottom: 42px;
+    }
+  }
+
+  .desctop-none {
+    display: block;
+
+    @media (max-width: $lg) {
+      display: none;
+    }
+  }
+
+  .images {
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    color: $hover;
+    margin-top: 20px;
+  }
+
   .item {
     padding: 50px 0;
     display: flex;
@@ -66,14 +96,15 @@
     }
 
     grid-template-rows: 440px 245px;
-    @media (max-width: $lg) { 
+
+    @media (max-width: $lg) {
       grid-template-rows: 241px 162px;
     }
 
     &-gallery2 {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      
+
       img:first-child {
         grid-column-start: 1;
         grid-column-end: 3;
@@ -84,7 +115,7 @@
     &-gallery3 {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      
+
       img:first-child {
         grid-column-start: 1;
         grid-column-end: 4;

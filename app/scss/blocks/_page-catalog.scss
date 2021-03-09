@@ -1,3 +1,45 @@
 .page-catalog {
-  
+
+
+  &__wrapper-title {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $sm) { 
+      flex-direction: column;
+    }
+  }
+
+  &__link {
+    align-items: flex-end;
+    display: flex;
+
+    @media (max-width: $sm) { 
+     margin-top: 48px;
+    }
+  }
+
+  &__download {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: $primary;
+    display: inline-flex;
+    align-items: center;
+
+    &::after {
+      content: "";
+      margin-left: 12px;
+      background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.49982 11.9664L13.2604 6.7355L14 7.40858L8.36832 13.5966L7.99854 14.003L7.62875 13.5966L1.99707 7.40858L2.73665 6.7355L7.49982 11.9692L7.49982 0L8.49982 0V11.9664Z' fill='%23C9A872'/%3E%3Cline y1='15.5' x2='16' y2='15.5' stroke='%23C9A872'/%3E%3C/svg%3E%0A") center no-repeat;
+      width: 16px;
+      height: 16px;
+      display: flex;
+      right: 0;
+
+    }
+
+    &:hover {
+      color: $primary;
+    }
+  }
 }
