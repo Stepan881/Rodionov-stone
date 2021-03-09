@@ -1,0 +1,23 @@
+<article class="item item-gallery row">
+  <div class="content col-md-12 col-lg-5">
+    <h2 class="catalog__header">@@title</h2>
+    <p class="text">@@text</p>
+    <div class="button-container">
+      @@include('../buttons/button-gold.html', {
+      "title": "Рассчитать стоимость",
+      "link": "#",
+      })
+      @@include('../buttons/button-transparent.html', {
+      "title": "Примеры работ",
+      "link": "#",
+      })
+    </div>
+  </div>
+  <div class="col-md-12 col-lg-7">
+    <div class="image-wrapper image-wrapper-gallery2">
+      <img class="image" src="@@url" srcset="@@url2x" alt="@@title">
+      <img class="image" src="@@url1" srcset="@@url2x1" alt="@@title">
+      <img class="image" src="@@url2" srcset="@@url2x2" alt="@@title">
+    </div>
+  </div>
+</article>

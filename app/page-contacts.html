@@ -1,5 +1,5 @@
-@@include('./head.html', {
-"title": "Главная"
+@@include('./parts/head.html', {
+"title": "Контакты"
 })
 
 @@include('./parts/header.html', {
@@ -7,19 +7,14 @@
 })
 
 <main class="height-header">
-	@@include('./parts/map.html')
+	<h1 class="visually-hidden">Контакты</h1>
+	@@include('./parts/map-contact.html')
 
 
-	<section class="form form__white">
-		<div class="container container-padding">
-			<div class="form__title-wrapper">
-				<h2 class="form__title">Оставить заявку</h2>
-			</div>
-			@@include('./parts/form/form.html', {
-				"class": "form form__white",
-			})
-		</div>
-	</section>
+  <!-- form form__silver form__white -->
+  @@include('./parts/form-wrapper.html', {
+    "class": "form form__white",
+  })
 
 
 </main>

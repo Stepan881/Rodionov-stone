@@ -4,6 +4,41 @@
     background: transparent;
     color: $primary;
 
+    &-silver {
+      background: $bg;
+    }
+
+    .form__item {
+      label {
+        color: $primary;
+      }
+
+      input {
+        color: $primary;
+        border: 1px solid $primary;
+      }
+    }
+
+    .form__politics {
+      color: $primary;
+
+      a {
+        color: $primary;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+
+    .form__title {
+      color: $primary;
+    }
+  }
+
+  &__silver {
+    background: $bg;
+    color: $primary;
     .form__item {
       label {
         color: $primary;
@@ -198,8 +233,4 @@
       width: 100%;
     }
   }
-
-
-
-
 }

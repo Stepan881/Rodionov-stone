@@ -1,4 +1,4 @@
-@@include('./head.html', {
+@@include('./parts/head.html', {
 "title": "Главная"
 })
 
@@ -73,28 +73,28 @@
 			<div class="work__wrapper row row-cols-1 row-cols-lg-3">
 
 				@@include('./parts/cards/card-work.html', {
-					"title": "Лестница из балтийского валуна",
-					"img": './images/work-cards/work1.jpg',
-					"img2x": './images/work-cards/work1@2x.png 2x',
-				})
-				
-				@@include('./parts/cards/card-work.html', {
-					"title": "Дорожка из балтийского валуна",
-					"img": './images/work-cards/work2.jpg',
-					"img2x": './images/work-cards/work2@2x.png 2x',
+				"title": "Лестница из балтийского валуна",
+				"img": './images/work-cards/work1.jpg',
+				"img2x": './images/work-cards/work1@2x.png 2x',
 				})
 
 				@@include('./parts/cards/card-work.html', {
-					"title": "Лестница из балтийского валуна",
-					"img": './images/work-cards/work3.jpg',
-					"img2x": './images/work-cards/work3@2x.png 2x',
+				"title": "Дорожка из балтийского валуна",
+				"img": './images/work-cards/work2.jpg',
+				"img2x": './images/work-cards/work2@2x.png 2x',
+				})
+
+				@@include('./parts/cards/card-work.html', {
+				"title": "Лестница из балтийского валуна",
+				"img": './images/work-cards/work3.jpg',
+				"img2x": './images/work-cards/work3@2x.png 2x',
 				})
 
 			</div>
 			<div class="work__btn">
 				@@include('./parts/buttons/button-more.html', {
 				"title": "Смотреть все работы",
-				"link": "#",
+				"link": "./page-catalog.html",
 				})
 			</div>
 		</div>
@@ -103,43 +103,30 @@
 	<section class="catalog">
 		<div class="container container-padding">
 			<h2 class="title">Каталог</h2>
-				<div class="catalog__wrapper">
+			<div class="catalog__wrapper">
 
-					@@include('./parts/cards/card-catalog.html', {
-						"title": "Балтийский (скандинавский) валун",
-						"text": "Элемент находит применение в укладке и даёт эффект целостности, массивности и монолита. Элемент находит применение в укладке и даёт эффект целостности, массивности и монолита.",
-						"url": "./images/catalog/catalog1.jpg",
-						"url2x": "./images/catalog/catalog1@2x.jpg",
-					})
+				@@include('./parts/cards/card-catalog.html', {
+				"title": "Балтийский (скандинавский) валун",
+				"text": "Элемент находит применение в укладке и даёт эффект целостности, массивности и монолита. Элемент находит применение в укладке и даёт эффект целостности, массивности и монолита.",
+				"url": "./images/catalog/catalog1.jpg",
+				"url2x": "./images/catalog/catalog1@2x.jpg",
+				})
 
-					@@include('./parts/cards/card-catalog.html', {
-						"title": "Цельный (не клееный) угловой элемент",
-						"text": "Элемент находит применение в укладке и даёт эффект целостности, массивности и монолита. Элемент находит применение в укладке и даёт эффект целостности, массивности и монолита.",
-						"url": "./images/catalog/catalog2.jpg",
-						"url2x": "./images/catalog/catalog2@2x.jpg",
-					})
-				</div>
-		</div>
-	</section>
-
-
-
-
-
-
-
-
-
-	<section class="form">
-		<div class="container container-padding">
-			<div class="form__title-wrapper">
-				<h2 class="form__title">Оставить заявку</h2>
+				@@include('./parts/cards/card-catalog.html', {
+				"title": "Цельный (не клееный) угловой элемент",
+				"text": "Элемент находит применение в укладке и даёт эффект целостности, массивности и монолита. Элемент находит применение в укладке и даёт эффект целостности, массивности и монолита.",
+				"url": "./images/catalog/catalog2.jpg",
+				"url2x": "./images/catalog/catalog2@2x.jpg",
+				})
 			</div>
-			@@include('./parts/form/form.html', {
-			"class": "form",
-			})
 		</div>
 	</section>
+
+
+  <!-- form form__silver form__white -->
+  @@include('./parts/form-wrapper.html', {
+    "class": "form",
+  })
 
 	<section class="pinterest">
 		<div class="container container-padding">
@@ -199,26 +186,7 @@
 		</div>
 	</section>
 
-	<section class="map">
-		<div class="wrapper">
-			<div class="container">
-				<div class="map__wrapper">
-					<div class="title__wrapper">
-						<h2 class="title">Контакты</h2>
-					</div>
-
-					<address class="item">236006, г. Калининград, ул. Магнитная, д. 4 </address>
-					<a class="item" href="tel:+84012770617">8 (4012) 77-06-17</a>
-					<a class="item" href="mailto:sstone39@mail.ru">sstone39@mail.ru</a>
-					<p class="item">9:00-18:00</p>
-
-				</div>
-			</div>
-			<div class="iframe__wrapper">
-				<iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2304.988232433504!2d20.478935315555123!3d54.709830179408705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e33df413a7ae83%3A0xf045661e0022d2e5!2z0YPQuy4g0JzQsNCz0L3QuNGC0L3QsNGPLCA0LCDQmtCw0LvQuNC90LjQvdCz0YDQsNC0LCDQmtCw0LvQuNC90LjQvdCz0YDQsNC00YHQutCw0Y8g0L7QsdC7LiwgMjM2MDA2!5e0!3m2!1sru!2sru!4v1614707294052!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-			</div>
-		</div>
-	</section>
+	@@include('./parts/map-contact.html')
 
 </main>
 <br>
