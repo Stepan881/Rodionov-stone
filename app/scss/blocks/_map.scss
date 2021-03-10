@@ -88,6 +88,10 @@
 
   .title__wrapper {
     margin-bottom: 60px;
+    
+    @media (max-width: $md) {
+      margin-bottom: 40px;
+    }
   }
 
   .item {

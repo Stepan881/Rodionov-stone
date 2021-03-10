@@ -154,6 +154,10 @@
   align-items: center;
   white-space: nowrap;
 
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px; 
+
   &:hover {
     color: #C1A477;
   }
@@ -165,6 +169,10 @@
     width: 320px;
     padding-left: 100px;
     margin: 48px auto 0;
+
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
 
     &::before {
       content: "";
@@ -253,6 +261,7 @@
         opacity: 1;
         transition: 0.3s;
       }
+
       @media (max-width: $lg) {
         margin: 0;
       }

@@ -6,8 +6,9 @@
     line-height: 62px;
     max-width: 560px;
     @media (max-width: $md) {
-      font-size: 36px;
-      line-height: 44px;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 56px;
       word-wrap: break-word;
     }
   }
@@ -27,6 +28,17 @@
 
   &__content {}
 
-  &__text {}
+  &__text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    a {
+      font-weight: 700;
+      color: $hover;
+      &:hover {
+        color: $hover;
+      }
+    }
+  }
 
 }

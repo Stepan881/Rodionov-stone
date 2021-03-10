@@ -4,23 +4,23 @@
 
   &__wrapper {
     padding: 55px 0;
-    display: flex; 
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 
-    @media (max-width: $md) {
-
-    }
+    @media (max-width: $md) {}
   }
- 
+
   &__logo {
     width: 33%;
-    @media (max-width: $lg) { 
+
+    @media (max-width: $lg) {
       width: 50%;
       order: 1;
     }
-    @media (max-width: $md) { 
+
+    @media (max-width: $md) {
       width: 100%;
       order: 1;
     }
@@ -40,13 +40,15 @@
       padding: 10px;
       display: flex;
     }
-    @media (max-width: $lg) { 
+
+    @media (max-width: $lg) {
       width: 50%;
       order: 3;
       justify-content: flex-start;
       margin: 15px 0;
     }
-    @media (max-width: $md) { 
+
+    @media (max-width: $md) {
       width: 100%;
       order: 4;
       margin: 48px auto 0;
@@ -58,11 +60,13 @@
     width: 33%;
     display: flex;
     justify-content: flex-end;
-    @media (max-width: $lg) { 
+
+    @media (max-width: $lg) {
       width: 50%;
       order: 2;
     }
-    @media (max-width: $md) { 
+
+    @media (max-width: $md) {
       width: 100%;
       order: 3;
       margin: 48px 0 0 0;
@@ -92,7 +96,8 @@
   &__logo-img {
     width: 161px;
     height: 121px;
-    @media (max-width: $md) { 
+
+    @media (max-width: $md) {
       margin: 0 auto;
     }
   }
@@ -102,15 +107,19 @@
     width: 33%;
     margin: 0;
     color: #BEBEBE;
-    
-    @media (max-width: $lg) { 
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+
+    @media (max-width: $lg) {
       width: 50%;
       order: 4;
       text-align: right;
       padding-top: 0;
       margin: 48px 0;
     }
-    @media (max-width: $md) { 
+
+    @media (max-width: $md) {
       width: 100%;
       order: 2;
       margin: 16px 0 0 0;
@@ -123,17 +132,22 @@
     width: 33%;
     color: $bd-dark;
     text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+
     &:hover {
       color: $bd-dark;
     }
 
-    @media (max-width: $lg) { 
+    @media (max-width: $lg) {
       width: 50%;
       order: 5;
       padding-top: 0;
       text-align: left;
     }
-    @media (max-width: $md) { 
+
+    @media (max-width: $md) {
       width: 100%;
       order: 5;
       margin-top: 48px;
@@ -142,18 +156,22 @@
   }
 
   &__development {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
     padding-top: 40px;
     width: 33%;
     margin: 0;
     text-align: right;
     color: #BEBEBE;
 
-    @media (max-width: $lg) { 
+    @media (max-width: $lg) {
       width: 50%;
       order: 6;
       padding-top: 0;
     }
-    @media (max-width: $md) { 
+
+    @media (max-width: $md) {
       width: 100%;
       order: 6;
       text-align: center;
@@ -163,6 +181,7 @@
 
   &__brand-link {
     color: $bd-dark;
+    font-weight: 600;
     &:hover {
       color: $bd-dark;
     }

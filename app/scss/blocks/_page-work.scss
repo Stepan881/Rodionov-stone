@@ -1,11 +1,20 @@
 .page-work {
 
+  .title {
+    font-weight: 400;
+
+    @media (max-width: $md) {
+      font-weight: 300;
+    }
+  }
+
   &__form {
     margin: 60px 0;
 
     fieldset {
       display: block;
       align-items: center;
+
       &:first-child {
         margin-bottom: 40px;
       }
@@ -14,23 +23,12 @@
 
   &__scroll {
 
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    width: auto;
-
-    @media (max-width: $lg) { 
-      width: 100%;
-      overflow-x: scroll;
-      overflow-y: hidden;
-
-  
-    }
-
-    &::-webkit-scrollbar { /* chrome based */
-      width: 0px;  /* ширина scrollbar'a */
-      background: transparent;  /* опционально */
-      -ms-overflow-style: none;  /* IE 10+ */
-      scrollbar-width: none; /* Firefox */
+    @media (max-width: $md) {
+      flex-direction: column;
+      align-items: flex-start;
     }
   }
 
@@ -54,6 +52,10 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+
+    @media (max-width: $md) {
+      margin: 5px 0;
+    }
   }
 
   &__input {
@@ -95,6 +97,12 @@
     max-height: 20px;
     min-height: 20px;
     border: 1px solid $hover;
+
+    @media (max-width: $md) {
+      order: -1;
+      margin-left: 0;
+      margin-right: 12px;
+    }
   }
 
   &__all {
@@ -114,7 +122,8 @@
     svg {
       margin-left: 23px;
     }
-    @media (max-width: $md) { 
+
+    @media (max-width: $md) {
       margin: 30px auto 0;
     }
 

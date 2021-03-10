@@ -119,6 +119,12 @@
 				"url2x": "./images/catalog/catalog2@2x.jpg 2x",
 				})
 			</div>
+			<div class="center">
+				@@include('./parts/buttons/button-more.html', {
+					"title": "Смотреть весь каталог",
+					"link": "./page-catalog.html",
+				})
+			</div>
 		</div>
 	</section>
 
@@ -167,7 +173,7 @@
 	"class": "form",
 	})
 
-	<section class="pinterest">
+	<section class="pinterest bg-white">
 		<div class="container container-padding">
 			<h2 class="title">Pinterest</h2>
 			<div class="pinterest__wrapper">
@@ -177,7 +183,7 @@
 
 				<div class="pinterest__btn">
 					@@include('./parts/buttons/button-more.html', {
-					"title": "pinterest",
+					"title": "Смотреть в pinterest",
 					"link": "pinterest.com",
 					})
 					<div class="pinterest__social">
@@ -229,5 +235,5 @@
 
 </main>
 <br>
-<button class="js-open-form" style="border: 1px solid red; padding: 10px 20px; margin: 10px">открыть форму</button>
+<!-- <button class="js-open-form" style="border: 1px solid red; padding: 10px 20px; margin: 10px">открыть форму</button> -->
 @@include('./parts/footer.html')

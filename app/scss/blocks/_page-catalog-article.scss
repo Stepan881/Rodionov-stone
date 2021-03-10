@@ -1,6 +1,6 @@
 .catalog.page-catalog-article {
 
-  .item { 
+  .item {
     @media (max-width: $lg) {
       padding: 0px;
     }
@@ -10,6 +10,17 @@
   .image {
     @media (max-width: $lg) {
       min-height: 250px;
+    }
+  }
+
+  .catalog__header {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+
+    @media (max-width: $md) {
+      font-size: 30px;
+      line-height: 38px;
     }
   }
 }

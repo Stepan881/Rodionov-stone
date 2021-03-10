@@ -175,6 +175,9 @@
 
     label {
       color: $white;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 22px;
     }
 
     span {
@@ -191,8 +194,8 @@
 
   &__politics {
     font-weight: normal;
-    font-size: 14px;
-    line-height: 19px;
+    font-size: 12px;
+    line-height: 20px;
     margin-bottom: 30px;
     padding-top: 32px;
     color: $white;
@@ -227,12 +230,19 @@
     background: $hover;
     transition: 0.3s;
     margin: 0 auto;
-
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    
     &:hover {
       background: #A38659;
       color: white;
     }
-
+    @media (max-width: $md) {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 22px;
+    }
 
     @media (max-width: $sm) {
       width: 100%;

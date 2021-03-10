@@ -8,6 +8,12 @@
     @media (max-width: $sm) { 
       flex-direction: column;
     }
+
+    padding-bottom: 100px;
+    @media (max-width: $md) {
+      padding-bottom: 0;
+    }
+
   }
 
   &__link {
@@ -43,6 +49,19 @@
     }
   }
   .catalog {
+
+    &__header {
+      font-weight: bold;
+      font-size: 44px;
+      line-height: 52px;
+      margin-bottom: 28px;
+      @media (max-width: $md) {
+        font-size: 36px;
+        line-height: 44px;
+
+      }
+    }
+
     .item {
       @media (max-width: $lg) {
         padding-bottom: 0;

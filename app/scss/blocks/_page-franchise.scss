@@ -1,5 +1,16 @@
 .page-franchise {
+  &.page-about-company {
+    .page-franchise__title {
+      font-weight: bold;
+      font-size: 54px;
+      line-height: 62px;
 
+      @media (max-width: $md) {
+        font-size: 36px;
+        line-height: 44px;
+      }
+    }
+  }
 
   &__wrapper {
     position: relative;
@@ -58,6 +69,7 @@
   .catalog {
     margin-top: 80px;
     padding-bottom: 60px;
+
     .content {
       order: -1;
       margin-bottom: 58px;

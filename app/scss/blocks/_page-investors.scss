@@ -86,5 +86,17 @@
     @media (max-width: $lg) {
       margin-top: 45px;
     }
+
+    .button {
+      .title {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        @media (max-width: $md) {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
   }
 }
