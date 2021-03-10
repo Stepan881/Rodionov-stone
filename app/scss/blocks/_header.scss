@@ -120,14 +120,24 @@
     flex-direction: column;
     justify-content: flex-start;
 
+
     &__menu {
       order: -1;
       flex-direction: column;
       width: 320px;
       padding: 120px 8px 8px 100px;
       margin: 0 auto;
+      flex-wrap: nowrap;
+
+      justify-content: flex-start;
+      background: silver;
+      min-height: max-content;
+      li {
+
+      }
 
       a {
+
         padding: 20px 0;
         display: flex;
         font-weight: bold;
