@@ -1,0 +1,53 @@
+<article class="item item-gallery row">
+  <span class="catalog__header monile-none">@@title</span>
+  <div class="content col-md-12 col-lg-5">
+    <h2 class="catalog__header desctop-none">@@title</h2>
+    <p class="text">@@text</p>
+    <div class="button-container">
+      @@include('../buttons/button-gold.html', {
+      "title": "Рассчитать стоимость",
+      "link": "#",
+      })
+    </div>
+  </div>
+  <div class="col-md-12 col-lg-7">
+    <div class="image-wrapper">
+      <div class="slider">
+        <div class="slider-wrapper slider">
+
+          <div class="slider-slide">
+            <a href="#" class="slider__search"></a>
+            <img class="image" src="@@url" srcset="@@url2x" alt="@@title">
+          </div>
+          <div class="slider-slide" style="display: none;">
+            <a href="#" class="slider__search"></a>
+            <img class="image" src="@@url" srcset="@@url2x" alt="@@title">
+          </div>
+          <div class="slider-slide" style="display: none;">
+            <a href="#" class="slider__search"></a>
+            <img class="image" src="@@url" srcset="@@url2x" alt="@@title">
+          </div>
+
+        </div>
+
+        <div class="slider__boolets">
+          <span class="slider__dot"></span>
+          <span class="slider__dot slider__dot--active"></span>
+          <span class="slider__dot"></span>
+          <span class="slider__dot"></span>
+        </div>
+
+        <div class="slider-button-prev">
+          <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.292892 7.2929C-0.0976315 7.68342 -0.0976314 8.31658 0.292893 8.70711L6.65686 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928933C7.68054 0.538409 7.04738 0.538409 6.65685 0.928933L0.292892 7.2929ZM21 7L1 7L1 9L21 9L21 7Z" fill="white" />
+          </svg>
+        </div>
+        <div class="slider-button-next">
+          <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.7071 8.70711C21.0976 8.31659 21.0976 7.68342 20.7071 7.2929L14.3431 0.928935C13.9526 0.53841 13.3195 0.53841 12.9289 0.928934C12.5384 1.31946 12.5384 1.95262 12.9289 2.34315L18.5858 8L12.9289 13.6569C12.5384 14.0474 12.5384 14.6805 12.9289 15.0711C13.3195 15.4616 13.9526 15.4616 14.3431 15.0711L20.7071 8.70711ZM-1.74846e-07 9L20 9L20 7L1.74846e-07 7L-1.74846e-07 9Z" fill="white" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>

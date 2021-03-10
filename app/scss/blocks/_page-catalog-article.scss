@@ -1,0 +1,15 @@
+.catalog.page-catalog-article {
+
+  .item { 
+    @media (max-width: $lg) {
+      padding: 0px;
+    }
+
+  }
+
+  .image {
+    @media (max-width: $lg) {
+      min-height: 250px;
+    }
+  }
+}
