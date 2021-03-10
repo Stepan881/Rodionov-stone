@@ -1,0 +1,73 @@
+.attitude {
+
+  .title {
+    @media (max-width: $xl) {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "t i"
+      "c i"
+      "c b"
+      "c .";
+
+    @media (max-width: $lg) {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "t"
+        "i"
+        "c"
+        "b";
+    }
+  }
+
+  &__content {
+    grid-area: c;
+  }
+
+  &__wrapper-title {
+    grid-area: t;
+    margin-bottom: 48px;
+  }
+
+  &__text {
+    position: relative;
+    padding: 12px 72px 20px 0;
+
+    &:before {
+      position: absolute;
+      content: '';
+      height: 1px;
+      width: 77px;
+      background: #C1A477;
+      margin: 0;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__wrapper-img {
+    grid-area: i;
+
+    @media (max-width: $lg) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__wrapper-btn {
+    grid-area: b;
+    margin-top: 60px;
+
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+}

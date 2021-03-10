@@ -68,9 +68,42 @@
     </div>
   </section>
 
+  <section class="work">
+		<div class="container container-padding">
+			<h2 class="title">Наши работы</h2>
+			<div class="work__wrapper row row-cols-1 row-cols-lg-3">
+
+				@@include('./parts/cards/card-work.html', {
+				"title": "Лестница из балтийского валуна",
+				"img": './images/work-cards/work1.jpg',
+				"img2x": './images/work-cards/work1@2x.jpg 2x',
+				})
+
+				@@include('./parts/cards/card-work.html', {
+				"title": "Дорожка из балтийского валуна",
+				"img": './images/work-cards/work2.jpg',
+				"img2x": './images/work-cards/work2@2x.jpg 2x',
+				})
+
+				@@include('./parts/cards/card-work.html', {
+				"title": "Лестница из балтийского валуна",
+				"img": './images/work-cards/work3.jpg',
+				"img2x": './images/work-cards/work3@2x.jpg 2x',
+				})
+
+			</div>
+			<div class="work__btn">
+				@@include('./parts/buttons/button-more.html', {
+				"title": "Смотреть все работы",
+				"link": "./page-catalog.html",
+				})
+			</div>
+		</div>
+	</section>
+
   <!-- form form__silver form__white -->
   @@include('./parts/form-wrapper.html', {
-    "class": "form form__silver",
+    "class": "form form__white",
   })
 
 </main>
