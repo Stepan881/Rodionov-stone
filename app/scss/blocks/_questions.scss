@@ -73,15 +73,6 @@
     opacity: 0;
   }
 
-  &__link-content {
-    font-weight: bold;
-    color: #C1A477;
-
-    &:hover {
-      color: #C1A477;
-    }
-  }
-
   &__plus {
     margin-left: auto;
     padding-left: 10px;
@@ -89,6 +80,16 @@
 
   &__text {
     margin-bottom: 20px;
+    max-width: 560px;
+    width: 100%;
+    a {
+      font-weight: bold;
+      color: #C1A477;
+  
+      &:hover {
+        color: #C1A477;
+      }
+    }
   }
 
 }

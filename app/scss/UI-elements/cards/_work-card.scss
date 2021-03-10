@@ -1,5 +1,6 @@
 .work-card {
   margin-bottom: 20px;
+
   &__wrapper {
     max-height: 520px;
     min-height: 480px;
@@ -38,6 +39,25 @@
     border-top: 1px solid $hover;
   }
 
+  &__link-a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    transition: 0.3s;
+
+    &:hover {
+      &+.work-card__content {
+        svg {
+          margin-left: 25px;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+
   &__link {
     font-weight: bold;
     font-size: 18px;
@@ -48,14 +68,6 @@
     svg {
       margin-left: 20px;
       transition: 0.3s;
-    }
-
-    &:hover {
-      color: $white;
-      svg {
-        margin-left: 25px;
-        transition: 0.3s;
-      }
     }
   }
 }

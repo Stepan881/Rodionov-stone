@@ -163,6 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			slidesToScroll: 1,
 			arrows: false,
 			dots: true,
+			fade: true,
 			dotsClass: 'slider__boolets',
 			customPaging: function (slider, i) {
 				return '<span class="slider__dot"></span>';

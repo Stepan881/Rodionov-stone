@@ -36,7 +36,7 @@
     color: $white;
     word-wrap: break-word;
 
-    @media (max-width: $md) {
+    @media (max-width: $lg) {
       font-size: 48px;
       line-height: 56px;
     }
@@ -47,10 +47,11 @@
     font-size: 24px;
     line-height: 32px;
     color: $white;
-
-    @media (max-width: $md) {
+    margin-top: 20px;
+    @media (max-width: $lg) {
       font-size: 20px;
       line-height: 28px;
+
     }
   }
 
