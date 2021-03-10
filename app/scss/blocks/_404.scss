@@ -3,12 +3,14 @@
 
   &__img-wrapper {
     width: 100%;
+    min-height: 500px;
     height: 100vh;
     position: relative;
   }
 
   &__img {
     width: 100%;
+    min-height: 500px;
     height: 100vh;
   }
 

@@ -2,10 +2,16 @@
 
   .page-franchise__title {
     font-weight: bold;
-font-size: 54px;
-line-height: 62px;
-max-width: 560px;
+    font-size: 54px;
+    line-height: 62px;
+    max-width: 560px;
+    @media (max-width: $md) {
+      font-size: 36px;
+      line-height: 44px;
+      word-wrap: break-word;
+    }
   }
+
   .page-franchise__text {
     font-weight: 600;
     font-size: 16px;
@@ -19,12 +25,8 @@ max-width: 560px;
     padding-bottom: 70px;
   }
 
-&__content {
+  &__content {}
 
-}
-
-&__text {
-
-}
+  &__text {}
 
 }

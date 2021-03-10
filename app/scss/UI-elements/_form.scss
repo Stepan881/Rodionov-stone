@@ -82,6 +82,11 @@
     font-size: 30px;
     line-height: 34px;
 
+    @media (max-width: $md) {
+      font-size: 20px;
+      line-height: 28px;
+    }
+
     &::after {
       position: absolute;
       content: '';

@@ -9,4 +9,15 @@
     display: flex;
     justify-content: center;
   }
+
+  .title {
+    font-size: 30px;
+    line-height: 48px;
+
+    @media (max-width: $md) {
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+  }
 }

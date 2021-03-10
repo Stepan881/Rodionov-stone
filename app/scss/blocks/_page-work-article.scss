@@ -7,6 +7,10 @@
       line-height: 62px;
       max-width: 657px;
       margin-bottom: 28px;
+      @media (max-width: $md) {
+        font-size: 36px;
+        line-height: 44px;
+      }
     }
 
     &__sub-title {
@@ -15,6 +19,7 @@
       line-height: 24px;
       max-width: 657px;
       margin-bottom: 60px;
+
     }
 
     &__slider {

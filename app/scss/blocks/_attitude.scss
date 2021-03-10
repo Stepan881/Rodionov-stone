@@ -51,6 +51,9 @@
       top: 0;
       left: 0;
     }
+    @media (max-width: $sm) { 
+      padding: 12px 0 20px 0;
+    }
   }
 
   &__wrapper-img {
@@ -67,6 +70,10 @@
 
     display: flex;
     justify-content: space-around;
+
+    @media (max-width: $sm) { 
+      flex-wrap: wrap;
+    }
 
   }
 
