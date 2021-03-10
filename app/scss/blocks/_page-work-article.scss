@@ -16,7 +16,7 @@
       max-width: 657px;
       margin-bottom: 60px;
     }
-    
+
     &__slider {
       position: relative;
     }
@@ -53,7 +53,7 @@
     }
 
     &__text {
- 
+
 
       @media (min-width: $lg) {
         padding-right: 71px;
@@ -106,5 +106,23 @@
       margin-top: 40px;
     }
 
+  }
+
+  .article__slider.slider {
+
+    .slider__boolets {
+      bottom: 30px;
+      display: flex !important;
+
+      @media (min-width: $lg) {
+        display: none !important;
+      }
+    }
+    .slick-arrow {
+      display: none;
+      @media (min-width: $lg) {
+        display: block;
+      }
+    }
   }
 }

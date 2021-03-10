@@ -42,7 +42,8 @@
 
 	<section class="first-screen">
 		<div class="first-screen__slider slider">
-			<div class="slider__wrapper">
+			<div class="slider__wrapper js-slider-index">
+
 				<div class="slider__slide">
 					<img class="slider__image" src="./images/slider-index/slide1.jpg" srcset="./images/slider-index/slide1@2x.jpg 2x" alt="Граним гранит">
 					<div class="slider__content">
@@ -51,20 +52,17 @@
 					</div>
 				</div>
 
-				<div class="slider__slide" style="display: none">
+				<div class="slider__slide">
 					<img class="slider__image" src="./images/slider-index/slide2.jpg" srcset="./images/slider-index/slide2@2x.jpg x2" alt="Гранитная мануфактура">
 					<div class="slider__content">
 						<h2 class="slider__head">Гранитная мануфактура</h2>
 						<p class="slider__text">Все виды работ из камня </p>
 					</div>
 				</div>
-				<div class="slider__boolets">
-					<span class="slider__dot"></span>
-					<span class="slider__dot slider__dot--active"></span>
-					<span class="slider__dot"></span>
-					<span class="slider__dot"></span>
-				</div>
+
+				
 			</div>
+
 	</section>
 
 	<section class="work">
@@ -124,7 +122,46 @@
 		</div>
 	</section>
 
+  <section class="franchise-causes">
+    <div class="container container-padding">
+      <h2 class="title">Почему выбирают нас</h2>
+      <div class="franchise-causes__container row row-cols-1 row-cols-lg-4">
+        <div class="franchise-causes__item">
+          <img class="franchise-causes__icon" src="./images/company/chat.svg" alt="Сервис">
+          <div class="franchise-causes__wrapper-content">
+            <div class="franchise-causes__title">Сервис</div>
+            <p class="franchise-causes__text">Консультации
+              в режиме online</p>
+          </div>
+        </div>
+        <div class="franchise-causes__item">
+          <img class="franchise-causes__icon" src="./images/company/guarantee.svg" alt="Пожизненная гарантия">
+          <div class="franchise-causes__wrapper-content">
+            <div class="franchise-causes__title">Пожизненная гарантия</div>
+            <p class="franchise-causes__text">Мы гарантируем службу изделия минимум 5 лет каждому клиенту</p>
+          </div>
+        </div>
+        <div class="franchise-causes__item">
+          <img class="franchise-causes__icon" src="./images/company/production.svg" alt="Производство">
+          <div class="franchise-causes__wrapper-content">
+            <div class="franchise-causes__title">Производство</div>
+            <p class="franchise-causes__text">Свой современный парк оборудования</p>
+          </div>
+        </div>
+        <div class="franchise-causes__item">
+          <img class="franchise-causes__icon" src="./images/company/froze.svg" alt="Замер без проблем">
+          <div class="franchise-causes__wrapper-content">
+            <div class="franchise-causes__title">Замер без проблем</div>
+            <p class="franchise-causes__text">Выезд замерщика с образцами
+            </p>
+          </div>
+        </div>
 
+      </div>
+    </div>
+  </section>
+
+	
   <!-- form form__silver form__white -->
   @@include('./parts/form-wrapper.html', {
     "class": "form",
