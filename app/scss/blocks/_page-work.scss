@@ -4,9 +4,8 @@
     margin: 60px 0;
 
     fieldset {
-      display: flex;
+      display: block;
       align-items: center;
-
       &:first-child {
         margin-bottom: 40px;
       }
@@ -14,9 +13,25 @@
   }
 
   &__scroll {
-    width: 100%;
-    display: flex;
+
+    display: inline-flex;
     align-items: center;
+    width: auto;
+
+    @media (max-width: $lg) { 
+      width: 100%;
+      overflow-x: scroll;
+      overflow-y: hidden;
+
+  
+    }
+
+    &::-webkit-scrollbar { /* chrome based */
+      width: 0px;  /* ширина scrollbar'a */
+      background: transparent;  /* опционально */
+      -ms-overflow-style: none;  /* IE 10+ */
+      scrollbar-width: none; /* Firefox */
+  }
   }
 
   &__legend {
@@ -25,12 +40,13 @@
     line-height: 26px;
     width: auto;
     margin-right: 40px;
-    margin-bottom: 0;
+    margin-bottom: 32px;
     display: flex;
     align-items: center;
   }
 
   &__label {
+    white-space: nowrap;
     font-weight: normal;
     font-size: 18px;
     line-height: 26px;
