@@ -128,16 +128,10 @@
       padding: 120px 8px 8px 100px;
       margin: 0 auto;
       flex-wrap: nowrap;
-
       justify-content: flex-start;
-      background: silver;
       min-height: max-content;
-      li {
-
-      }
 
       a {
-
         padding: 20px 0;
         display: flex;
         font-weight: bold;
@@ -145,8 +139,6 @@
         line-height: 26px;
       }
     }
-
-
 
     &__wrapper {
       flex-direction: column;
