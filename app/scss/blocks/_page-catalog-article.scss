@@ -1,5 +1,11 @@
 .catalog.page-catalog-article {
 
+  .container-padding {
+    @media (max-width: $lg) {
+      padding-top: 0;
+    }
+  }
+
   .item {
     @media (max-width: $lg) {
       padding: 0px;

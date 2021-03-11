@@ -70,6 +70,10 @@
     margin-top: 80px;
     padding-bottom: 60px;
 
+    @media (max-width: $lg) {
+      margin-top: 0;
+    }
+
     .content {
       order: -1;
       margin-bottom: 0;
