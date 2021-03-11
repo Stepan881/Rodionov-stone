@@ -29,4 +29,26 @@
       line-height: 38px;
     }
   }
+
+  .slider {
+    .slider__boolets {
+      bottom: 10px;
+
+      @media (max-width: $lg) {
+        bottom: 0;
+      }
+    }
+
+    .slick-slide {
+      position: relative;
+    }
+
+    .slick-arrow {
+
+      @media (max-width: $lg) {
+        display: none;
+      }
+    }
+  }
+
 }
