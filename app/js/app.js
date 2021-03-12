@@ -251,7 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		$('.slider-wrapper', $(this)).slick({
 			adaptiveHeight: true,
 			dots: true,
-			// fade: true,
+			fade: true,
 			appendArrows: 'pagination',
 			lazyLoad: 'ondemand',
 			prevArrow: $(this).find('.slider-button-prev'),
